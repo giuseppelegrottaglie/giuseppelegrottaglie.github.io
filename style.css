@@ -1,0 +1,73 @@
+
+body{
+    text-decoration: none;
+}
+
+
+
+/*Mobile Nav*/
+.material-icons{
+    font-size: 48px;
+    color: black;
+}
+
+.b-button{
+    font-size: 1rem;
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    align-items: center;
+}
+
+.b-button p{
+    text-align: center;
+    color: black;
+    margin-bottom: 0;
+}
+
+.btn-secondary a:hover{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+
+.btn-secondary a:active{
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+   
+}
+
+.footer{
+    border-top: 1px solid transparent;
+}
+
+
+.mynav{
+   font-weight: bold;
+}
+
+.d-button{
+   background-color: rgba(255, 0, 0, 0);
+   color: black;
+   border: none;
+}
+
+.tablet-bottombar, .mobile-bottombar{
+    background-color: rgb(240, 240, 240);  
+}
+
+
+h1{
+    font-size: 3rem;
+    padding-top: 20px;
+}
+
+.navbar-toggler-icon{
+    color: black;
+}
+
+.navbar-toggler{
+    border: 0;
+}
+
