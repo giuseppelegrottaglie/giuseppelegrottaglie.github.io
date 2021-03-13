@@ -42,11 +42,6 @@ body{
     border-top: 1px solid transparent;
 }
 
-
-.mynav{
-   font-weight: bold;
-}
-
 .d-button{
    background-color: rgba(255, 0, 0, 0);
    color: black;
@@ -71,6 +66,12 @@ h1{
     border: 0;
 }
 
+/* Carosello */
+.mycarousel{
+    align-items: center;
+}
+
+/* Indicatori Carosello */
 .carousel-indicators{
     display: flex;
     justify-content: space-between;
@@ -89,17 +90,25 @@ h1{
 
 .carousel-indicators li:hover {
     background-color: #3379b700; 
+    color: rgb(23, 23, 23);
 }
 
 .carousel-indicators li.active {
     background-color: #3379b700; 
-    font-weight: bold;
+    font-weight: 500;
+    color: black;
 }
 
 .myindicator{
     font-size: 1rem;
 }
 
+/* Serve per annullare l'evento del separatore all'interno del carosello */
+.myseparator{
+    pointer-events: none;
+}
+
+/* Controlli avanti e indietro  */
 .mycontrol{
     color: rgba(0, 0, 0, 0.372);
 }
@@ -111,8 +120,4 @@ h1{
 .mycontrol:active{
     color: rgba(0, 0, 0, 0.598);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.221);
-}
-
-.mycarousel{
-    align-items: center;
 }
