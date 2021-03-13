@@ -11,6 +11,7 @@
     <title> My Template</title>
     <meta name="description" content="Web Template made to test my awesome skillz">
 
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -18,14 +19,13 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+     <!-- W3School CSS -->
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- W3School CSS -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-<body>
-
+  
 </head>
 
 
@@ -97,6 +97,52 @@
             </div>
         </nav>
     </header>
+
+    <!-- Carosello con "text-indicators" by samurai-pepps -->
+    <div class="container d-none d-md-block">
+
+        <div id="mycarousel" class="carousel slide" data-ride="carousel">
+            
+            <!-- Indicators --> 
+            <ol class="carousel-indicators">
+              <li data-target="#mycarousel" data-slide-to="0" class="active myindicator">Ingrediente</li>
+              <li data-target="#mycarousel" data-slide-to="1" class="myindicator">Ingrediente</li>
+              <li data-target="#mycarousel" data-slide-to="2" class="myindicator">Ingrediente</li>
+              <li data-target="#mycarousel" data-slide-to="3" class="myindicator">Ingrediente</li>
+              <li data-target="#mycarousel" data-slide-to="4" class="myindicator">Ingrediente</li>
+            </ol>
+
+            <!-- Slides Content -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images/Immagine Slideshow.jpg" class="d-block w-100" alt="Images/Immagine Slideshow.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Immagine Slideshow.jpg" class="d-block w-100" alt="Images/Immagine Slideshow.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Immagine Slideshow.jpg" class="d-block w-100" alt="Images/Immagine Slideshow.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Immagine Slideshow.jpg" class="d-block w-100" alt="Images/Immagine Slideshow.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Immagine Slideshow.jpg" class="d-block w-100" alt="Images/Immagine Slideshow.jpg">
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+              <span class="material-icons mycontrol" aria-hidden="true">navigate_before</span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                <span class="material-icons mycontrol" aria-hidden="true">navigate_next</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </div>
+      
 
     <!-- NavBar Tablet -->
     <footer class="fixed-bottom mobile-bottombar d-none d-sm-block d-md-none">
