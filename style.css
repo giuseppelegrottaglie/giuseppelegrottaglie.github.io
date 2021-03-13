@@ -121,3 +121,10 @@ h1{
     color: rgba(0, 0, 0, 0.598);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.221);
 }
+
+
+/* Carosello Mobile */
+.carousel-caption{
+    color: black;
+
+}
