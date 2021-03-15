@@ -93,33 +93,37 @@
                 <a class="navbar-brand" style="color: black;" href="#">MyNavbar</a>
             </div>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <!-- Modal Menu Backdrop Icon -->
+            <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#my-backdrop-modal">
                 <span class="navbar-toggler-icon ml-auto w3-animate-opacity"></span>
             </button>
 
-            <!-- Destra -->
-            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-
-                <ul class="navbar-nav">
-
-                    <li class="nav-item mynav">
-                        <a class="nav-link pl-1" href="#">Page</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pl-1" href="#">Page</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pl-1" href="#">Page</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pl-1" href="#">Page</a>
-                    </li>
-                </ul>
-
-            </div>
-
         </nav>
     </header>
+
+    <!-- Modal Backdrop by samurai-pepps -->
+    <div class="container-fluid">
+
+        <div class="modal" id="my-backdrop-modal" tabindex="-1" aria-labelledby="my-backdrop-modalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content animate-bottom">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="my-backdrop-modalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- NavBar Tablet -->
     <footer class="fixed-bottom mobile-bottombar d-none d-sm-block d-md-none">
