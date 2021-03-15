@@ -226,11 +226,11 @@ h1{
     border-radius: 15px 15px 0px 0px;
   }
 
-  .modal.fade .modal-dialog {
+  .modal .modal-dialog {
     transform: translate3d(0, 100, 0);
   }
   
-  .modal.in .modal-dialog {
+  .modal .modal-dialog {
     transform: translate3d(0, 0, 0);
   }
 
