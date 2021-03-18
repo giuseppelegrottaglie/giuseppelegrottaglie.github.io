@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43.256" height="35.937" viewBox="0 0 43.256 35.937">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="Icon_feather-user-plus" data-name="Icon feather-user-plus" transform="translate(0 -3)">
+    <path id="Tracciato_11" data-name="Tracciato 11" class="cls-1" d="M28.947,33.479v-3.66A7.319,7.319,0,0,0,21.628,22.5H8.819A7.319,7.319,0,0,0,1.5,29.819v3.66" transform="translate(0 3.958)"/>
+    <path id="Tracciato_12" data-name="Tracciato 12" class="cls-1" d="M21.389,11.819A7.319,7.319,0,1,1,14.069,4.5a7.319,7.319,0,0,1,7.319,7.319Z" transform="translate(1.154 0)"/>
+    <path id="Tracciato_13" data-name="Tracciato 13" class="cls-1" d="M30,12V22.979" transform="translate(6.267 1.649)"/>
+    <path id="Tracciato_14" data-name="Tracciato 14" class="cls-1" d="M36.479,16.5H25.5" transform="translate(5.277 2.639)"/>
+  </g>
+</svg>

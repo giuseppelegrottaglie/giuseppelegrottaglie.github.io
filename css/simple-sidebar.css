@@ -12,12 +12,13 @@
 
 #sidebar-wrapper {
   min-height: 100vh;
-  margin-left: -20rem;
+  margin-left: -15rem;
   -webkit-transition: margin .25s ease-out;
   -moz-transition: margin .25s ease-out;
   -o-transition: margin .25s ease-out;
   transition: margin .25s ease-out;
   z-index: 3;
+  position: fixed;
 }
 
 #sidebar-wrapper .sidebar-heading {
@@ -27,7 +28,7 @@
 }
 
 #sidebar-wrapper .list-group {
-  width: 20rem;
+  width: 15rem;
 }
 
 #page-content-wrapper {
@@ -50,7 +51,7 @@
   }
 
   #wrapper.toggled #sidebar-wrapper {
-    margin-left: -20rem;
+    margin-left: -15rem;
   }
 }
 
@@ -75,10 +76,6 @@
 
 .menu-item a{
   text-decoration: none;
-}
-
-.menu-title{
- 
 }
 
 .menu-title h5{
@@ -149,6 +146,8 @@
 
 .navbar{
   background-color: #ffffff;
+  position: f;
+  z-index: 2;
 }
 
 .border-right{
@@ -157,4 +156,77 @@
 
 .border-bottom{
   border: 0;
+
+}
+
+
+/* Cards Summary */
+.mycard-1{
+  width: 216px;
+  height: 89px;
+  background: transparent linear-gradient(249deg, #637BE3 0%, #6CE4D9 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 10px #00000029;
+  border-radius: 15px;
+  color: white;
+}
+
+.mycard-2{
+  width: 216px;
+  height: 89px;
+  background: transparent linear-gradient(249deg, #EE7C7B 0%, #E35B9E 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 10px #00000029;
+  border-radius: 15px;
+  color: white;
+}
+
+.mycard-3{
+  width: 216px;
+  height: 89px;
+  background: transparent linear-gradient(249deg, #60B2B5 0%, #76E09D 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 10px #00000029;
+  border-radius: 15px;
+  color: white;
+}
+
+.mycard-4{
+  width: 216px;
+  height: 89px;
+  background: transparent linear-gradient(249deg, #F08D62 0%, #F9D75F 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 10px #00000029;
+  border-radius: 15px;
+  color: white;
+}
+
+.mycard-body h5{
+    font-size: 2rem;
+    padding-left: 22px;
+    line-height: 2rem;
+    padding-top: 7px;
+}
+
+
+.mycard-body p{
+  font-size: 0.7rem;
+  padding-left: 22px;
+  padding-bottom: 10px;
+  line-height: 1rem;
+}
+
+.card-deck{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.my-align{
+  align-items: center;
+}
+
+.mycard-icon img{
+  padding-right: 25px;
+}
+
+.mycontainer{
+  padding-top: 120px;
+  padding-left: 250px;
 }
