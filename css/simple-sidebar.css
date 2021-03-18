@@ -12,13 +12,12 @@
 
 #sidebar-wrapper {
   min-height: 100vh;
-  margin-left: -15rem;
+  margin-left: -18rem;
   -webkit-transition: margin .25s ease-out;
   -moz-transition: margin .25s ease-out;
   -o-transition: margin .25s ease-out;
   transition: margin .25s ease-out;
   z-index: 3;
-  position: fixed;
 }
 
 #sidebar-wrapper .sidebar-heading {
@@ -28,7 +27,7 @@
 }
 
 #sidebar-wrapper .list-group {
-  width: 15rem;
+  width: 18rem;
 }
 
 #page-content-wrapper {
@@ -51,7 +50,7 @@
   }
 
   #wrapper.toggled #sidebar-wrapper {
-    margin-left: -15rem;
+    margin-left: -18rem;
   }
 }
 
@@ -168,6 +167,7 @@
   box-shadow: 0px 4px 10px #00000029;
   border-radius: 15px;
   color: white;
+  margin-top: 15px;
 }
 
 .mycard-2{
@@ -177,6 +177,7 @@
   box-shadow: 0px 4px 10px #00000029;
   border-radius: 15px;
   color: white;
+  margin-top: 15px;
 }
 
 .mycard-3{
@@ -186,6 +187,7 @@
   box-shadow: 0px 4px 10px #00000029;
   border-radius: 15px;
   color: white;
+  margin-top: 15px;
 }
 
 .mycard-4{
@@ -195,6 +197,7 @@
   box-shadow: 0px 4px 10px #00000029;
   border-radius: 15px;
   color: white;
+  margin-top: 15px;
 }
 
 .mycard-body h5{
@@ -214,8 +217,8 @@
 
 .card-deck{
   display: flex;
-  justify-content: space-between;
-
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .my-align{
@@ -224,9 +227,4 @@
 
 .mycard-icon img{
   padding-right: 25px;
-}
-
-.mycontainer{
-  padding-top: 120px;
-  padding-left: 250px;
 }
