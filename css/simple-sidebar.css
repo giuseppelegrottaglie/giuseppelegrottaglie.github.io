@@ -1,0 +1,147 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template/simple-sidebar)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+.body{
+  background-color: #F4F5F9;
+  font-family: 'Rubik', sans-serif;
+}
+ #wrapper {
+    overflow-x: hidden;
+ }
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding-top: 50px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+}
+
+#sidebar-wrapper .list-group {
+  width: 20rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+
+
+.logo{
+  padding-top: 50px;
+  padding-bottom: 40px;
+  padding-left: 50px;
+}
+
+
+.dashboard-menu{
+  padding-left: 50px;
+  padding-right: 60px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  display: block;
+  justify-content: center;
+}
+
+
+.menu-item a{
+  text-decoration: none;
+}
+
+.menu-title{
+ 
+}
+
+.menu-title h5{
+  font-size: 20px;
+  font-weight: 600;
+  color: #5C697B;
+}
+
+.dropdown-divider{
+  height: 0;
+  margin: .5rem 0;
+  overflow: hidden;
+  border-top: 2px solid #e9ecef;
+}
+
+.menu-items{
+  padding-left: 35px;
+  padding-right: 60px;
+  color: #919BA8;
+}
+
+.nav-link{
+  padding-bottom: 15px;
+  padding-top: 15px;
+  display: flex;
+}
+
+.material-icons{
+  padding-right: 15px;
+  font-size: 16px;
+}
+
+.nav-link.active{
+  width: 190px;
+  background-color: #69BBDD;
+  border-radius: 7px;
+  box-shadow: 0px 8px 15px #00000029;
+  text-align: left;
+  color: white;
+}
+
+.nav-link:hover{
+ color: #46505e;
+}
+
+.myheader{
+  height: 59px;
+  background-color: white;
+}
+
+.padding-0{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.profile-image{
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.navbar-nav{
+  align-items: center;
+}
