@@ -230,6 +230,10 @@
   margin-top: 30px;
 }
 
+.mypadding-bot{
+  margin-bottom: 50px;
+}
+
 .table{
   border-collapse:separate; 
   border-spacing: 0px 7px;
@@ -284,3 +288,141 @@
   background-color: red;
   height: 14px;
 }
+
+.myform{
+  padding-bottom: 10px;
+}
+
+th {
+  cursor: pointer;
+}
+
+td{
+  color: #919BA8;
+}
+
+.myrow-item{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* Task List prova */
+
+.todo-nav {
+  margin-top: 10px
+}
+
+.todo-list {
+  margin: 10px 0;
+  border-radius: 100px;
+}
+
+.todo-list .todo-item {
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+  background: #f7f7f7;
+}
+
+.todo-list.only-active .todo-item.complete {
+  display: none
+}
+
+.todo-list.only-active .todo-item:not(.complete) {
+  display: block
+}
+
+.todo-list.only-complete .todo-item:not(.complete) {
+  display: none
+}
+
+.todo-list.only-complete .todo-item.complete {
+  display: block
+}
+
+.todo-list .todo-item.complete span {
+  text-decoration: line-through
+}
+
+.remove-todo-item {
+  color: #ccc;
+  visibility: hidden
+}
+
+.remove-todo-item:hover {
+  color: #5f5f5f
+}
+
+.todo-item:hover .remove-todo-item {
+  visibility: visible
+}
+
+div.checker {
+  width: 18px;
+  height: 18px;
+}
+
+div.checker input,
+div.checker span {
+  width: 18px;
+  height: 18px;
+}
+
+div.checker span {
+  display: -moz-inline-box;
+  display: inline-block;
+  zoom: 1;
+  text-align: center;
+  background-position: 0 -260px;
+}
+
+div.checker, div.checker input, div.checker span {
+  width: 19px;
+  height: 19px;
+}
+
+div.checker, div.radio, div.uploader {
+  position: relative;
+}
+
+div.button, div.button *, div.checker, div.checker *, div.radio, div.radio *, div.selector, div.selector *, div.uploader, div.uploader * {
+  margin: 0;
+  padding: 0;
+}
+
+div.button, div.checker, div.radio, div.selector, div.uploader {
+  display: -moz-inline-box;
+  display: inline-block;
+  zoom: 1;
+  vertical-align: middle;
+}
+
+.mycard {
+  padding: 25px;
+  margin-bottom: 20px;
+  border: initial;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px #00000029;
+}
+
+.mycard.active {
+  background-color: #69BBDD;
+  margin-right: 10px;
+  box-shadow: 0px 4px 10px #00000029;
+  color: white;
+}
+
+.todo-nav .nav-link{
+  background-color: rgb(245, 245, 245);
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.todo-nav .nav-link:hover{
+  background-color: #69BBDD;
+  margin-right: 10px;
+  box-shadow: 0px 4px 10px #00000029;
+  color: white;
+}
+

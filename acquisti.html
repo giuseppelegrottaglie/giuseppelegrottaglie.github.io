@@ -19,11 +19,11 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="css/simple-sidebar.css" rel="stylesheet">
-
   <!-- W3School CSS -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
 
   <!-- Material Icons -->
   <link
@@ -141,13 +141,91 @@
 
       <!-- Corpo della dashboard -->
       <div class="container-fluid">
-        <div class="container pt-5">
-          <h1 style="font-weight: 700; color: #5C697B;">Overview</h1>
-          <p style="color: #5C697B;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nulla libero adipisci
-            corrupti commodi sed.</p>
+        <div class="container pt-4">
+          <div class="row d-flex">
+            <div class="col-10 pl-5">
+              <h1 style="font-weight: 700; color: #5C697B;">Acquisti del giorno</h1>
+              <!-- <p style="color: #5C697B;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nulla libero adipisci
+                corrupti commodi sed.</p> -->
+            </div>
+            <div class="col-2 ml-auto " style="display: flex;">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary my-auto" data-toggle="modal" data-target="#exampleModal">
+                Nuovo Acquisto
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Nuovo Acquisto</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputPassword4">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputAddress">Address</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputAddress2">Address 2</label>
+                          <input type="text" class="form-control" id="inputAddress2"
+                            placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label for="inputState">State</label>
+                            <select id="inputState" class="form-control">
+                              <option selected>Choose...</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-2">
+                            <label for="inputZip">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                              Check me out
+                            </label>
+                          </div>
+                        </div>
+                        <!-- <button type="submit" class="btn btn-primary">Sign in</button> -->
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+                      <button type="button" class="btn btn-primary">Aggiungi</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <!-- Summary Cards Large -->
-          <div class="card-deck d-none d-xl-flex pt-5">
+          <div class="card-deck d-none d-xl-flex pt-4">
             <!-- Card Acquisti -->
             <div class="mycard-1" style="max-width: 250px; max-height: 89px;">
               <div class="row my-align">
@@ -219,7 +297,7 @@
           </div>
 
           <!-- Summary Cards Medium -->
-          <div class="card-deck d-none d-md-flex d-xl-none pt-5">
+          <div class="card-deck d-none d-md-flex d-xl-none pt-4">
             <!-- Card Acquisti -->
             <div class="mycard-1" style="width: 160px; max-height: 89px;">
               <div class="row my-align">
@@ -291,7 +369,7 @@
           </div>
 
           <!-- Summary Cards Small -->
-          <div class="card-deck d-none d-sm-flex d-md-none pt-5">
+          <div class="card-deck d-none d-sm-flex d-md-none pt-4">
             <!-- Card Acquisti -->
             <div class="mycard-1" style="width: 200px; max-height: 89px;">
               <div class="row my-align">
@@ -363,7 +441,7 @@
           </div>
 
           <!-- Summary Cards Mobile -->
-          <div class="card-deck d-sm-none d-md-none pt-5">
+          <div class="card-deck d-sm-none d-md-none pt-4">
             <!-- Card Acquisti -->
             <div class="mycard-1" style="width: 300px; max-height: 89px;">
               <div class="row my-align">
@@ -439,156 +517,114 @@
 
             <div class="row">
 
-              <div class="col-8">
-                <div class="row mypadding-top mytable-header">
+              <div class="col">
+                <div class="row mytable-header">
                   <div class="col-10">
-                    <h5>Ultimi Acquisti</h5>
+                    <h5>Panoramica delle vendite</h5>
                   </div>
-                  
-                  <div class="col-2 mr-0 pr-0">
-                    <a href="#">Mostra di più</a>
-                  </div> 
+
+                  <div class="col-2 ml-auto">
+                    <a href="#">Ultimi 30 giorni</a>
+                  </div>
                 </div>
+                <div class="mybox">
+                  <canvas id="myChartline"
+                    style="width:100%;max-width:1200px; height: 100%; max-height: 200px;"></canvas>
+                </div>
+              </div>
+            </div>
 
-                <form class="form-inline my-2 my-lg-0">
-                  <input type="text" id="myInput" class="form-control mr-sm-2" onkeyup="myFunction()" placeholder="Ricerca nella tabella" aria-label="Search">
-                </form>
 
-                <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.."
-                title="Type in a name"> -->
+            <div class="row mypadding-top w3-animate-bottom">
+
+              <div class="col">
+
+                <div class="row">
+
+                  <div class="col d-flex">
+                    <div class="form-group">
+                      <!-- <label for="exampleFormControlSelect1">Numero di righe</label> -->
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+
+
+                    <form class=" myform form-inline my-2 my-lg-0 d-flex ml-auto">
+                      <span class="material-icons">search</span>
+                      <input id="myInput" onkeyup="myFunction()" class="form-control mr-sm-2" type="search"
+                        placeholder="Search" aria-label="Search">
+                    </form>
+
+                  </div>
+
+                </div>
 
                 <table id="myTable" class="table table-borderless">
                   <thead>
-                    <tr class="mytable-row">
-                      <th scope="col">ID</th>
-                      <th scope="col">Cliente</th>
-                      <th scope="col">Status</th>
-                      <th scope="col">Data</th>
-                      <th scope="col">Totale</th>
+                    <tr class="myrow">
+                      <th scope="col" class="myrow-item" style="color: #5C697B;">
+                        <div class="d-flex">
+                          ID<span class="material-icons pl-2">swap_vert</span>
+                        </div>
+                      </th>
+                      <th scope="col" class="myrow-item" style="color: #5C697B;">
+                        <div class="d-flex">
+                          Cliente<span class="material-icons pl-2">swap_vert</span>
+                        </div>
+                      </th>
+                      <th scope="col" class="myrow-item" style="color: #5C697B;">
+                        <div class="d-flex">
+                          Status<span class="material-icons pl-2">swap_vert</span>
+                        </div>
+                      </th>
+                      <th scope="col" class="myrow-item" style="color: #5C697B;">
+                        <div class="d-flex">
+                          Data<span class="material-icons pl-2">swap_vert</span>
+                        </div>
+                      </th>
+                      <th scope="col" class="myrow-item" style="color: #5C697B;">
+                        <div class="d-flex">
+                          Totale<span class="material-icons pl-2">swap_vert</span>
+                        </div>
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr class="mytable-row">
-                      <td>9999</td>
+                    <tr class="myrow">
+                      <td>1</td>
                       <td>Lorenzo Ipsum Dolor</td>
                       <td>Consegnato</td>
                       <td>22-7-2021</td>
                       <td>$9999.99</td>
                     </tr>
-                    <tr class="mytable-row">
-                      <td>9999</td>
+                    <tr class="myrow">
+                      <td>4</td>
                       <td>Lorem Ipsum Dolor</td>
                       <td>Consegnato</td>
                       <td>22-7-2021</td>
                       <td>$9999.99</td>
                     </tr>
-                    <tr class="mytable-row">
-                      <td>9999</td>
+                    <tr class="myrow">
+                      <td>5</td>
                       <td>Lorem Ipsum Dolor</td>
                       <td>Consegnato</td>
                       <td>22-7-2021</td>
                       <td>$9999.99</td>
                     </tr>
-                    <tr class="mytable-row">
-                      <td>9999</td>
+                    <tr class="myrow">
+                      <td>2</td>
                       <td>Lorem Ipsum Dolor</td>
                       <td>Consegnato</td>
                       <td>22-7-2021</td>
                       <td>$9999.99</td>
                     </tr>
-                    <tr class="mytable-row">
-                      <td>9999</td>
-                      <td>Lorem Ipsum Dolor</td>
-                      <td>Consegnato</td>
-                      <td>22-7-2021</td>
-                      <td>$9999.99</td>
-                    </tr>
-                    <tr class="mytable-row">
-                      <td>9999</td>
-                      <td>Lorem Ipsum Dolor</td>
-                      <td>Consegnato</td>
-                      <td>22-7-2021</td>
-                      <td>$9999.99</td>
-                    </tr>
-                    <tr class="mytable-row">
-                      <td>9999</td>
-                      <td>Lorem Ipsum Dolor</td>
-                      <td>Consegnato</td>
-                      <td>22-7-2021</td>
-                      <td>$9999.99</td>
-                    </tr>
-                    <tr class="mytable-row">
-                      <td>9999</td>
-                      <td>Lorem Ipsum Dolor</td>
-                      <td>Consegnato</td>
-                      <td>22-7-2021</td>
-                      <td>$9999.99</td>
-                    </tr>
-                    <tr class="mytable-row">
-                      <td>9999</td>
-                      <td>Lorem Ipsum Dolor</td>
-                      <td>Consegnato</td>
-                      <td>22-7-2021</td>
-                      <td>$9999.99</td>
-                    </tr>
-                    <tr class="mytable-row">
-                      <td>9999</td>
-                      <td>Lorem Ipsum Dolor</td>
-                      <td>Consegnato</td>
-                      <td>22-7-2021</td>
-                      <td>$9999.99</td>
-                    </tr>
-                    <tr class="mytable-row">
-                      <td>9999</td>
-                      <td>Lorem Ipsum Dolor</td>
-                      <td>Consegnato</td>
-                      <td>22-7-2021</td>
-                      <td>$9999.99</td>
-                    </tr>
-                    <tr class="mytable-row">
-                      <td>9999</td>
-                      <td>Lorem Ipsum Dolor</td>
-                      <td>Consegnato</td>
-                      <td>22-7-2021</td>
-                      <td>$9999.99</td>
-                    </tr>
-                    <tr class="mytable-row">
-                      <td>9999</td>
-                      <td>Lorem Ipsum Dolor</td>
-                      <td>Consegnato</td>
-                      <td>22-7-2021</td>
-                      <td>$9999.99</td>
-                    </tr>
-                    <tr class="mytable-row">
-                      <td>9999</td>
-                      <td>Lorem Ipsum Dolor</td>
-                      <td>Consegnato</td>
-                      <td>22-7-2021</td>
-                      <td>$9999.99</td>
-                    </tr>
-                    <tr class="mytable-row">
-                      <td>9999</td>
-                      <td>Lorem Ipsum Dolor</td>
-                      <td>Consegnato</td>
-                      <td>22-7-2021</td>
-                      <td>$9999.99</td>
-                    </tr>
-                    <tr class="mytable-row">
-                      <td>9999</td>
-                      <td>Lorem Ipsum Dolor</td>
-                      <td>Consegnato</td>
-                      <td>22-7-2021</td>
-                      <td>$9999.99</td>
-                    </tr>
-                    <tr class="mytable-row">
-                      <td>9999</td>
-                      <td>Lorem Ipsum Dolor</td>
-                      <td>Consegnato</td>
-                      <td>22-7-2021</td>
-                      <td>$9999.99</td>
-                    </tr>
-                    <tr class="mytable-row">
-                      <td>9999</td>
+                    <tr class="myrow">
+                      <td>7</td>
                       <td>Lorem Ipsum Dolor</td>
                       <td>Consegnato</td>
                       <td>22-7-2021</td>
@@ -597,31 +633,37 @@
                   </tbody>
                 </table>
 
-                <div class="pagination-container">
-                  <nav>
-                    <ul class="pagination"></ul>
-                  </nav>
-                </div>
-              </div>
-              <div class="col-4">
-                <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-end mypadding-bot">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Precedente</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Successivo</a>
+                    </li>
+                  </ul>
+                </nav>
 
               </div>
             </div>
+
           </div>
-
-
-
-
         </div>
 
 
-        <!-- /#page-content-wrapper -->
 
       </div>
-      <!-- /#wrapper -->
+
+
+      <!-- /#page-content-wrapper -->
+
     </div>
+    <!-- /#wrapper -->
   </div>
+
 
 
   <!-- Bootstrap core JavaScript -->
