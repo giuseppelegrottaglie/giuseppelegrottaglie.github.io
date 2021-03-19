@@ -19,11 +19,11 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="css/simple-sidebar.css" rel="stylesheet">
-
   <!-- W3School CSS -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
 
   <!-- Material Icons -->
   <link
@@ -89,6 +89,7 @@
 
 
     </div>
+
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
@@ -140,13 +141,13 @@
 
       <!-- Corpo della dashboard -->
       <div class="container-fluid">
-        <div class="container pt-5">
-          <h1 style="font-weight: 700; color: #5C697B;">Overview</h1>
-          <p style="color: #5C697B;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nulla libero adipisci
+        <div class="container pt-4">
+          <h1 class="pl-4" style="font-weight: 700; color: #5C697B;">Overview</h1>
+          <p class="pl-4" style="color: #5C697B;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nulla libero adipisci
             corrupti commodi sed.</p>
 
           <!-- Summary Cards Large -->
-          <div class="card-deck d-none d-xl-flex pt-5">
+          <div class="card-deck d-none d-xl-flex pt-4">
             <!-- Card Acquisti -->
             <div class="mycard-1" style="max-width: 250px; max-height: 89px;">
               <div class="row my-align">
@@ -218,7 +219,7 @@
           </div>
 
           <!-- Summary Cards Medium -->
-          <div class="card-deck d-none d-md-flex d-xl-none pt-5">
+          <div class="card-deck d-none d-md-flex d-xl-none pt-4">
             <!-- Card Acquisti -->
             <div class="mycard-1" style="width: 160px; max-height: 89px;">
               <div class="row my-align">
@@ -290,7 +291,7 @@
           </div>
 
           <!-- Summary Cards Small -->
-          <div class="card-deck d-none d-sm-flex d-md-none pt-5">
+          <div class="card-deck d-none d-sm-flex d-md-none pt-4">
             <!-- Card Acquisti -->
             <div class="mycard-1" style="width: 200px; max-height: 89px;">
               <div class="row my-align">
@@ -362,7 +363,7 @@
           </div>
 
           <!-- Summary Cards Mobile -->
-          <div class="card-deck d-sm-none d-md-none pt-5">
+          <div class="card-deck d-sm-none d-md-none pt-4">
             <!-- Card Acquisti -->
             <div class="mycard-1" style="width: 300px; max-height: 89px;">
               <div class="row my-align">
@@ -433,6 +434,107 @@
 
           </div>
 
+          <!-- Ultimi Ordini -->
+          <div class="container mypadding-top">
+
+            <div class="row">
+              <div class="col-4">
+                <div class="row mytable-header">
+                  <div class="col-10">
+                    <h5>Prodotti più venduti</h5>
+                  </div>
+                </div>
+                <div class="mybox">
+                  <canvas id="myChartpie1" style="width:100%;max-width:1200px; height: 100%; max-height: 200px;"></canvas>
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="row mytable-header">
+                  <div class="col-10">
+                    <h5>Panoramica delle vendite</h5>
+                  </div>
+
+                  <div class="col-2 mr-0 pr-0">
+                    <a href="#">Ultimi 7 giorni</a>
+                  </div>
+                </div>
+                <div class="mybox">
+                  <canvas id="myChartline" style="width:100%;max-width:1200px; height: 100%; max-height: 200px;"></canvas>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+
+              <div class="col-8">
+                <div class="row mypadding-top mytable-header">
+                  <div class="col-10">
+                    <h5>Ultimi Acquisti</h5>
+                  </div>
+
+                  <div class="col-2 mr-0 pr-0">
+                    <a href="#">Mostra di più</a>
+                  </div>
+                </div>
+
+                <table id="myTable" class="table table-borderless">
+                  <thead>
+                    <tr class="myrow">
+                      <th scope="col">ID</th>
+                      <th scope="col">Cliente</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Data</th>
+                      <th scope="col">Totale</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="myrow">
+                      <td>9999</td>
+                      <td>Lorenzo Ipsum Dolor</td>
+                      <td>Consegnato</td>
+                      <td>22-7-2021</td>
+                      <td>$9999.99</td>
+                    </tr>
+                    <tr class="myrow">
+                      <td>9999</td>
+                      <td>Lorem Ipsum Dolor</td>
+                      <td>Consegnato</td>
+                      <td>22-7-2021</td>
+                      <td>$9999.99</td>
+                    </tr>
+                    <tr class="myrow">
+                      <td>9999</td>
+                      <td>Lorem Ipsum Dolor</td>
+                      <td>Consegnato</td>
+                      <td>22-7-2021</td>
+                      <td>$9999.99</td>
+                    </tr>
+                    <tr class="myrow">
+                      <td>9999</td>
+                      <td>Lorem Ipsum Dolor</td>
+                      <td>Consegnato</td>
+                      <td>22-7-2021</td>
+                      <td>$9999.99</td>
+                    </tr>
+                    <tr class="myrow">
+                      <td>9999</td>
+                      <td>Lorem Ipsum Dolor</td>
+                      <td>Consegnato</td>
+                      <td>22-7-2021</td>
+                      <td>$9999.99</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-4">
+
+
+              </div>
+            </div>
+          </div>
+
+
 
 
         </div>
@@ -443,18 +545,26 @@
       </div>
       <!-- /#wrapper -->
     </div>
+  </div>
 
-      <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-      <!-- Menu Toggle Script -->
-      <script>
-        $("#menu-toggle").click(function (e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("toggled");
-        });
-      </script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- w3school chart js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+  <!-- MyScripts -->
+  <script src="scripts.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
 
 </body>
 
