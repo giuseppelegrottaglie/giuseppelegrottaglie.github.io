@@ -65,11 +65,11 @@
       <div class="list-group list-group-flush">
         <div class="menu-items">
           <a class="nav-link" href="index.html"> <span class="material-icons">home</span> Home</a>
-          <a class="nav-link" href="vendite.html"><span class="material-icons">sell</span>Vendite</a>
+          <a class="nav-link active" href="vendite.html"><span class="material-icons">sell</span>Vendite</a>
           <a class="nav-link" href="spedizioni.html"><span class="material-icons">local_shipping</span>Spedizioni</a>
           <a class="nav-link" href="prodotti.html"><span class="material-icons">category</span>Prodotti</a>
           <a class="nav-link" href="clienti.html"><span class="material-icons">group</span>Clienti</a>
-          <a class="nav-link active" href="visita.html"><span class="material-icons">transfer_within_a_station</span>Visita</a>
+          <a class="nav-link" href="visita.html"><span class="material-icons">transfer_within_a_station</span>Visita</a>
           <a class="nav-link" href="veicoli.html"><span class="material-icons">garage</span>Veicoli</a>
           <a class="nav-link" href="personale.html"><span class="material-icons">badge</span>Personale</a>
         </div>
@@ -103,7 +103,7 @@
 
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-light bg-none border-bottom">
-       <img class="d-lg-none" src="Images/menu_open-black-18dp.svg" id="menu-toggle" alt="Sidebar Menu Toggle">
+        <img class="d-lg-none" src="Images/menu_open-black-18dp.svg" id="menu-toggle" alt="Sidebar Menu Toggle">
         <h3 style="font-weight: 700; color: #5C697B; padding-left:10px;">Admin</h3>
 
 
@@ -149,25 +149,25 @@
       <!-- Corpo della dashboard -->
       <div class="container-fluid">
         <div class="container pt-4">
-          <div class="row align-items-center">
-            <div class="col-8 d-flex">
-              <h2 style="font-weight: 700; color: #5C697B;">Visite del giorno</h2>
+          <div class="row d-flex align-items-center">
+            <div class="col-8">
+              <h2 style="font-weight: 700; color: #5C697B;">Vendite del giorno</h2>
               <!-- <p style="color: #5C697B;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nulla libero adipisci
                 corrupti commodi sed.</p> -->
             </div>
 
             <div class="col-4 d-flex">
               <!-- Button trigger modal -->
-              <span class="material-icons ml-auto mypointer" style="font-size: 50px; color: #919BA8;"
-                data-toggle="modal" data-target="#nuova-visita">add_box</span>
+              <span class="material-icons pr-0 ml-auto mypointer" style="font-size: 50px; color: #919BA8;"
+                data-toggle="modal" data-target="#nuova-vendita">add_box</span>
 
               <!-- Modal Nuovo Acquisto -->
-              <div class="modal fade" id="nuova-visita" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="nuova-visitaLabel"
+              <div class="modal fade" id="nuova-vendita" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="nuova-venditaLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" style="font-size: 25px; font-weight: 700;" id="nuova-visitaLabel">Nuova Visita</h5>
+                      <h5 class="modal-title" style="font-size: 25px; font-weight: 700;" id="nuova-venditaLabel">Nuova Vendita</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
@@ -246,13 +246,13 @@
               </div>
 
               <!-- Modal Elimina -->
-            <div class="modal fade" id="elimina-visita" tabindex="-1" aria-labelledby="elimina-visitaLabel"
+            <div class="modal fade" id="elimina-acquisto" tabindex="-1" aria-labelledby="elimina-acquistoLabel"
             aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
                   <!-- Titolo -->
-                  <h5 class="modal-title" style="font-size: 25px; font-weight: 700;" id="elimina-visitaLabel">Sei sicuro di volerla eliminare?</h5>
+                  <h5 class="modal-title" style="font-size: 25px; font-weight: 700;" id="elimina-acquistoLabel">Sei sicuro di volerlo eliminare?</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -276,12 +276,12 @@
           <!-- Ultimi Ordini -->
           <div class="container mypadding-top">
 
-            <!-- <div class="row">
+            <div class="row d-none d-md-block">
 
               <div class="col">
                 <div class="row mytable-header d-flex align-items-center">
                   <div class="col">
-                    <h5>Panoramica dei clienti</h5>
+                    <h5>Panoramica delle vendite</h5>
                   </div>
 
                   <div class="col" style="display: flex;">
@@ -293,7 +293,7 @@
                     style="width:100%;max-width:1200px; height: 100%; max-height: 200px;"></canvas>
                 </div>
               </div>
-            </div> -->
+            </div>
 
 
 
@@ -301,8 +301,8 @@
 
             <!-- Tabella di prova -->
             <div style="margin-top:50px">
-              <div class="row d-flex">
-                <div class="col d-flex">
+              <div class="row d-flex align-items-center">
+                <div class="col-4 d-flex">
                   <div class="form-group">
                     <!--		Show Numbers Of Rows 		-->
                     <select class="form-control" name="state" id="maxRows">
@@ -319,10 +319,10 @@
                   </div>
                 </div>
 
-                <div class="col d-flex">
+                <div class="col-8 d-flex">
                   <form class="form-group form-inline d-flex align-items-center ml-auto">
                     <span class="material-icons d-none d-md-block">search</span>
-                    <input id="myInputDefTable" onkeyup="myFunction()" class="form-control mr-sm-2" type="search"
+                    <input id="myInputDefTable" onkeyup="myFunction()" class="form-control" type="search"
                       placeholder="Search" aria-label="Search">
                   </form>
                 </div>
@@ -364,10 +364,10 @@
                   <td>1-636-140-1210</td>
                   <td>Oct 26, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -376,10 +376,10 @@
                   <td>1-962-122-8834</td>
                   <td>Aug 2, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -388,10 +388,10 @@
                   <td>1-584-906-8572</td>
                   <td>Sep 15, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -400,10 +400,10 @@
                   <td>1-364-156-9666</td>
                   <td>Nov 28, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -412,10 +412,10 @@
                   <td>1-646-420-3211</td>
                   <td>Aug 4, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -424,10 +424,10 @@
                   <td>1-788-762-3800</td>
                   <td>Apr 25, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -436,10 +436,10 @@
                   <td>1-888-617-5106</td>
                   <td>Nov 3, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -448,10 +448,10 @@
                   <td>1-176-725-3287</td>
                   <td>Mar 10, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -460,10 +460,10 @@
                   <td>1-867-829-4207</td>
                   <td>Nov 11, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -472,10 +472,10 @@
                   <td>1-539-674-6286</td>
                   <td>May 4, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -484,10 +484,10 @@
                   <td>1-450-585-0087</td>
                   <td>Nov 28, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -496,10 +496,10 @@
                   <td>1-746-842-1533</td>
                   <td>Jul 25, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -508,10 +508,10 @@
                   <td>1-134-497-7454</td>
                   <td>Dec 3, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -520,10 +520,10 @@
                   <td>1-709-608-3138</td>
                   <td>Dec 6, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -532,10 +532,10 @@
                   <td>1-797-194-5400</td>
                   <td>Jul 21, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -544,10 +544,10 @@
                   <td>1-262-180-8026</td>
                   <td>Sep 1, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -556,10 +556,10 @@
                   <td>1-236-283-7422</td>
                   <td>Jul 26, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -568,10 +568,10 @@
                   <td>1-973-844-7994</td>
                   <td>Dec 31, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -580,10 +580,10 @@
                   <td>1-626-851-7695</td>
                   <td>Feb 23, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -592,10 +592,10 @@
                   <td>1-861-773-5057</td>
                   <td>Nov 11, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -604,10 +604,10 @@
                   <td>1-620-744-5242</td>
                   <td>Oct 8, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -616,10 +616,10 @@
                   <td>1-690-390-5508</td>
                   <td>Sep 12, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -628,10 +628,10 @@
                   <td>1-214-162-0579</td>
                   <td>Jan 10, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -640,10 +640,10 @@
                   <td>1-619-732-1620</td>
                   <td>Oct 29, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -652,10 +652,10 @@
                   <td>1-661-248-5024</td>
                   <td>Oct 18, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -664,10 +664,10 @@
                   <td>1-162-976-4535</td>
                   <td>Apr 1, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -676,10 +676,10 @@
                   <td>1-728-466-6663</td>
                   <td>Nov 16, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -688,10 +688,10 @@
                   <td>1-247-767-3540</td>
                   <td>Nov 10, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -700,10 +700,10 @@
                   <td>1-760-667-4590</td>
                   <td>Feb 27, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -712,10 +712,10 @@
                   <td>1-766-402-6701</td>
                   <td>Jan 12, 2017</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -724,10 +724,10 @@
                   <td>1-130-931-4827</td>
                   <td>Dec 9, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -736,10 +736,10 @@
                   <td>1-830-428-6433</td>
                   <td>Aug 4, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -748,10 +748,10 @@
                   <td>1-632-814-2661</td>
                   <td>Jan 9, 2017</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -760,10 +760,10 @@
                   <td>1-529-104-7213</td>
                   <td>Jan 24, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -772,10 +772,10 @@
                   <td>1-221-669-5726</td>
                   <td>Aug 29, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -784,10 +784,10 @@
                   <td>1-519-668-4195</td>
                   <td>Mar 10, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -796,10 +796,10 @@
                   <td>1-562-764-0884</td>
                   <td>Nov 30, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -808,10 +808,10 @@
                   <td>1-220-349-5963</td>
                   <td>Mar 11, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -820,10 +820,10 @@
                   <td>1-636-137-1798</td>
                   <td>Sep 26, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -832,10 +832,10 @@
                   <td>1-383-465-5772</td>
                   <td>Jan 14, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -844,10 +844,10 @@
                   <td>1-792-259-9851</td>
                   <td>Feb 17, 2017</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -856,10 +856,10 @@
                   <td>1-779-142-8309</td>
                   <td>Nov 9, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -868,10 +868,10 @@
                   <td>1-640-170-8919</td>
                   <td>Nov 19, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -880,10 +880,10 @@
                   <td>1-982-607-6613</td>
                   <td>Apr 28, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -892,10 +892,10 @@
                   <td>1-225-773-8292</td>
                   <td>Mar 25, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -904,10 +904,10 @@
                   <td>1-407-645-0660</td>
                   <td>May 26, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -916,10 +916,10 @@
                   <td>1-251-843-1655</td>
                   <td>Jul 16, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -928,10 +928,10 @@
                   <td>1-786-660-6130</td>
                   <td>Feb 21, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -940,10 +940,10 @@
                   <td>1-899-356-0342</td>
                   <td>Jan 23, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -952,10 +952,10 @@
                   <td>1-853-128-2109</td>
                   <td>Nov 19, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -964,10 +964,10 @@
                   <td>1-157-854-9417</td>
                   <td>Mar 14, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -976,10 +976,10 @@
                   <td>1-280-601-8635</td>
                   <td>Aug 7, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -988,10 +988,10 @@
                   <td>1-348-493-1317</td>
                   <td>Feb 1, 2017</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1000,10 +1000,10 @@
                   <td>1-553-372-6872</td>
                   <td>Dec 14, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1012,10 +1012,10 @@
                   <td>1-674-742-2550</td>
                   <td>Aug 4, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1024,10 +1024,10 @@
                   <td>1-918-545-3934</td>
                   <td>Nov 16, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1036,10 +1036,10 @@
                   <td>1-618-175-6929</td>
                   <td>Aug 13, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1048,10 +1048,10 @@
                   <td>1-883-616-6383</td>
                   <td>Dec 23, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1060,10 +1060,10 @@
                   <td>1-365-745-4938</td>
                   <td>Nov 23, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1072,10 +1072,10 @@
                   <td>1-858-232-8568</td>
                   <td>Jan 17, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1084,10 +1084,10 @@
                   <td>1-238-516-8560</td>
                   <td>May 4, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1096,10 +1096,10 @@
                   <td>1-597-900-1913</td>
                   <td>Sep 25, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1108,10 +1108,10 @@
                   <td>1-843-574-0482</td>
                   <td>May 31, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1120,10 +1120,10 @@
                   <td>1-586-347-9206</td>
                   <td>Mar 8, 2017</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1132,10 +1132,10 @@
                   <td>1-934-604-0841</td>
                   <td>Jan 10, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1144,10 +1144,10 @@
                   <td>1-258-113-9485</td>
                   <td>Sep 4, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1156,10 +1156,10 @@
                   <td>1-565-322-4592</td>
                   <td>Jun 30, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1168,10 +1168,10 @@
                   <td>1-596-269-3513</td>
                   <td>Jun 18, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1180,10 +1180,10 @@
                   <td>1-752-436-8434</td>
                   <td>Aug 25, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1192,10 +1192,10 @@
                   <td>1-365-105-7118</td>
                   <td>Sep 30, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1204,10 +1204,10 @@
                   <td>1-911-608-5554</td>
                   <td>Nov 23, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1216,10 +1216,10 @@
                   <td>1-373-781-8939</td>
                   <td>Feb 19, 2017</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1228,10 +1228,10 @@
                   <td>1-563-162-7634</td>
                   <td>Jul 7, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1240,10 +1240,10 @@
                   <td>1-647-784-5955</td>
                   <td>Jul 18, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1252,10 +1252,10 @@
                   <td>1-262-815-5463</td>
                   <td>Apr 1, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1264,10 +1264,10 @@
                   <td>1-447-832-2739</td>
                   <td>Sep 29, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1276,10 +1276,10 @@
                   <td>1-151-663-4654</td>
                   <td>Aug 5, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1288,10 +1288,10 @@
                   <td>1-449-378-9773</td>
                   <td>May 16, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1300,10 +1300,10 @@
                   <td>1-687-820-7974</td>
                   <td>Nov 23, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1312,10 +1312,10 @@
                   <td>1-510-600-8899</td>
                   <td>Aug 17, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1324,10 +1324,10 @@
                   <td>1-250-764-1300</td>
                   <td>Jun 18, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1336,10 +1336,10 @@
                   <td>1-766-120-0796</td>
                   <td>Nov 27, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1348,10 +1348,10 @@
                   <td>1-603-891-3134</td>
                   <td>Sep 21, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1360,10 +1360,10 @@
                   <td>1-261-614-8636</td>
                   <td>Jan 1, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1372,10 +1372,10 @@
                   <td>1-170-639-6825</td>
                   <td>Sep 9, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1384,10 +1384,10 @@
                   <td>1-445-965-4679</td>
                   <td>Aug 23, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1396,10 +1396,10 @@
                   <td>1-888-201-8554</td>
                   <td>Jun 16, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1408,10 +1408,10 @@
                   <td>1-787-909-6344</td>
                   <td>Nov 8, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1420,10 +1420,10 @@
                   <td>1-108-298-1209</td>
                   <td>Sep 20, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1432,10 +1432,10 @@
                   <td>1-662-166-3319</td>
                   <td>Jun 26, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1444,10 +1444,10 @@
                   <td>1-277-210-6159</td>
                   <td>Feb 2, 2017</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1456,10 +1456,10 @@
                   <td>1-501-647-3500</td>
                   <td>Nov 20, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1468,10 +1468,10 @@
                   <td>1-661-985-0463</td>
                   <td>Dec 19, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1480,10 +1480,10 @@
                   <td>1-396-412-6389</td>
                   <td>Mar 25, 2017</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1492,10 +1492,10 @@
                   <td>1-249-633-9976</td>
                   <td>Dec 21, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1504,10 +1504,10 @@
                   <td>1-321-798-8569</td>
                   <td>Oct 5, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1516,10 +1516,10 @@
                   <td>1-360-375-8997</td>
                   <td>Apr 16, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1528,10 +1528,10 @@
                   <td>1-218-544-5876</td>
                   <td>Nov 29, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1540,10 +1540,10 @@
                   <td>1-624-968-2863</td>
                   <td>Dec 1, 2015</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1552,10 +1552,10 @@
                   <td>1-837-635-8180</td>
                   <td>Mar 21, 2017</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
                 <tr class="myrow">
@@ -1564,10 +1564,10 @@
                   <td>1-626-851-7695</td>
                   <td>Feb 23, 2016</td>
                   <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#nuova-visita">create</span>
+                      data-target="#nuova-vendita">create</span>
                   </td>
                   <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#elimina-visita">delete</span>
+                      data-target="#elimina-acquisto">delete</span>
                   </td>
                 </tr>
               </table>
