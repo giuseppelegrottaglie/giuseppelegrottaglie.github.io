@@ -3,8 +3,15 @@
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
  */
+
+.container-fluid{
+  background-color: #F4F5F9;
+  min-height: 100vh;
+}
+
 .body{
   font-family: 'Rubik', sans-serif;
+  
 }
  #wrapper {
     overflow-x: hidden;
@@ -38,14 +45,13 @@
 #wrapper.toggled #sidebar-wrapper {
   margin-left: 0;
 }
-
 /* prima 768 */
 @media (min-width: 992px) {
   #sidebar-wrapper {
     margin-left: 0;
     position: fixed;
     height:100%;
-    min-height:700px; /*Set the height you want to be able to scroll to here*/
+    min-height:auto; /* Set the height you want to be able to scroll to here*/
     overflow: auto; /*Needed due to centering with margins*/
   }
 
@@ -167,7 +173,7 @@
 
 /* Cards Summary HOME */
 .mycard-1{
-  width: 216px;
+  max-width: 216px;
   height: 89px;
   background: transparent linear-gradient(249deg, #637BE3 0%, #6CE4D9 100%) 0% 0% no-repeat padding-box;
   box-shadow: 0px 4px 10px #00000029;
@@ -177,7 +183,7 @@
 }
 
 .mycard-2{
-  width: 216px;
+  max-width: 216px;
   height: 89px;
   background: transparent linear-gradient(249deg, #EE7C7B 0%, #E35B9E 100%) 0% 0% no-repeat padding-box;
   box-shadow: 0px 4px 10px #00000029;
@@ -187,7 +193,7 @@
 }
 
 .mycard-3{
-  width: 216px;
+  max-width: 216px;
   height: 89px;
   background: transparent linear-gradient(249deg, #60B2B5 0%, #76E09D 100%) 0% 0% no-repeat padding-box;
   box-shadow: 0px 4px 10px #7cb0fe29;
@@ -198,7 +204,7 @@
 }
 
 .mycard-4{
-  width: 216px;
+  max-width: 216px;
   height: 89px;
   background: transparent linear-gradient(249deg, #F08D62 0%, #F9D75F 100%) 0% 0% no-repeat padding-box;
   box-shadow: 0px 4px 10px #00000029;
@@ -209,7 +215,7 @@
 
 /* Cards Summary CALENDARIO E TASK */
 .mycard-task{
-  width: 216px;
+  max-width: 216px;
   height: 89px;
   background-color: #616c70;
   border-radius: 15px;
@@ -218,8 +224,6 @@
 }
 
 .mycard-task:hover{
-  width: 216px;
-  height: 89px;
   background-color: #69BBDD;
   box-shadow: 0px 4px 10px #00000029;
   border-radius: 15px;
@@ -228,8 +232,6 @@
 }
 
 .mycard-task.active{
-  width: 216px;
-  height: 89px;
   background-color: #69BBDD;
   box-shadow: 0px 4px 10px #00000029;
   border-radius: 15px;
@@ -238,10 +240,10 @@
 }
 
 .card-deck-task{
-  /* display: flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: space-around; */
+  align-content: space-around;
   align-items: center;
 }
 
@@ -285,6 +287,9 @@
 .table{
   border-collapse:separate; 
   border-spacing: 0px 7px;
+  overflow: auto;
+  overflow: scroll; /* Scrollbar are always visible */
+  overflow: auto;   /* Scrollbar is displayed as it's needed */
 }
 
 /* Tabelle */
@@ -453,7 +458,7 @@ div.button, div.checker, div.radio, div.selector, div.uploader {
   vertical-align: middle;
 }
 
-/* Card dei task */
+/* Card delle password */
 .mycard{
   padding: 20px;
   margin-right: 10px;
@@ -478,13 +483,12 @@ div.button, div.checker, div.radio, div.selector, div.uploader {
 
 .todo-nav .nav-link{
   background-color: rgb(255, 255, 255);
-  margin-right: 10px;
+  margin: 15px;
   border-radius: 10px;
 }
 
 .todo-nav .nav-link:hover{
   background-color: #69BBDD;
-  margin-right: 10px;
   box-shadow: 0px 4px 10px #00000029;
   color: white;
 }

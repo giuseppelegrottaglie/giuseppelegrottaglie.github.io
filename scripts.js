@@ -1,3 +1,23 @@
+// Bar Chart
+var xValues = ["Category", "Category", "Category", "Category", "Category"];
+var yValues = [55, 49, 44, 24, 15];
+var barColors = ["#67A4DF","#E96E8A","#6CCBA8","#F9D35F","#A867DF"];
+
+new Chart("myChartBar", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {
+        display: false,
+    }
+  }
+});
 
 // Grafico Lineare Home
 var xValues = ['Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Sabato','Domenica'];
@@ -31,7 +51,7 @@ var barColors = [
   "#A867DF"
 ];
 
-new Chart("myChartpie1", {
+new Chart("myChartPie", {
   type: "doughnut",
   data: {
     labels: xValues,
@@ -126,6 +146,14 @@ jQuery(document).ready(function($) {
   $(".clickable-row").click(function() {
       window.location = $(this).data("href");
   });
+});
+
+// Disabilita il tasto invio
+$(document).keypress(
+  function(event){
+    if (event.which == '13') {
+      event.preventDefault();
+    }
 });
 
 
