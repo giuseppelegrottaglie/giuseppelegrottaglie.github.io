@@ -39,7 +39,8 @@
   margin-left: 0;
 }
 
-@media (min-width: 768px) {
+/* prima 768 */
+@media (min-width: 992px) {
   #sidebar-wrapper {
     margin-left: 0;
     position: fixed;
