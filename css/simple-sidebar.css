@@ -488,9 +488,7 @@ div.button, div.checker, div.radio, div.selector, div.uploader {
 }
 
 .todo-nav .nav-link:hover{
-  background-color: #69BBDD;
   box-shadow: 0px 4px 10px #00000029;
-  color: white;
 }
 
 .todo-nav .my-active{
