@@ -159,7 +159,7 @@
 }
 
 
-/* Cards Summary */
+/* Cards Summary HOME */
 .mycard-1{
   width: 216px;
   height: 89px;
@@ -167,6 +167,7 @@
   box-shadow: 0px 4px 10px #00000029;
   border-radius: 15px;
   color: white;
+  margin: 15px;
 }
 
 .mycard-2{
@@ -176,15 +177,18 @@
   box-shadow: 0px 4px 10px #00000029;
   border-radius: 15px;
   color: white;
+  margin: 15px;
 }
 
 .mycard-3{
   width: 216px;
   height: 89px;
   background: transparent linear-gradient(249deg, #60B2B5 0%, #76E09D 100%) 0% 0% no-repeat padding-box;
-  box-shadow: 0px 4px 10px #00000029;
+  box-shadow: 0px 4px 10px #7cb0fe29;
   border-radius: 15px;
   color: white;
+  margin-top: 15px;
+  margin: 15px;
 }
 
 .mycard-4{
@@ -194,6 +198,45 @@
   box-shadow: 0px 4px 10px #00000029;
   border-radius: 15px;
   color: white;
+  margin: 15px;
+}
+
+/* Cards Summary CALENDARIO E TASK */
+.mycard-task{
+  width: 216px;
+  height: 89px;
+  background-color: #616c70;
+  border-radius: 15px;
+  color: white;
+  margin: 15px;
+}
+
+.mycard-task:hover{
+  width: 216px;
+  height: 89px;
+  background-color: #69BBDD;
+  box-shadow: 0px 4px 10px #00000029;
+  border-radius: 15px;
+  color: white;
+  margin: 15px;
+}
+
+.mycard-task.active{
+  width: 216px;
+  height: 89px;
+  background-color: #69BBDD;
+  box-shadow: 0px 4px 10px #00000029;
+  border-radius: 15px;
+  color: white;
+  margin: 15px;
+}
+
+.card-deck-task{
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around; */
+  align-items: center;
 }
 
 .mycard-body h5{
@@ -211,10 +254,8 @@
 }
 
 .card-deck{
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-  align-content: space-around;
+  align-items: center;
 }
 
 .my-align{
@@ -226,6 +267,7 @@
   padding-top: 15px;
 }
 
+/* Utili per fare spazio sopra e sotto gli elementi */
 .mypadding-top{
   margin-top: 30px;
 }
@@ -238,12 +280,14 @@
   border-collapse:separate; 
   border-spacing: 0px 7px;
 }
+
+/* Tabelle */
 .myrow{
   border: 0;
   border-top: 0;
   border-bottom: 0;
   box-shadow: 0px 3px 10px #00000029;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: white;
 }
 
@@ -258,6 +302,7 @@
   font-weight: 500;
   letter-spacing: 0px;
   color: #5C697B;
+  font-size: 1rem;
 }
 
 .mytable-header a{
@@ -296,6 +341,11 @@
 th {
   cursor: pointer;
 }
+
+.mypointer {
+  cursor: pointer;
+}
+
 
 td{
   color: #919BA8;
@@ -397,13 +447,13 @@ div.button, div.checker, div.radio, div.selector, div.uploader {
   vertical-align: middle;
 }
 
-.mycard {
-  padding: 25px;
-  margin-bottom: 20px;
+/* Card dei task */
+.mycard{
+  padding: 20px;
+  margin-right: 10px;
   border: initial;
-  background: #fff;
+  background-color: white;
   border-radius: 10px;
-  box-shadow: 0px 4px 10px #00000029;
 }
 
 .mycard.active {
@@ -413,8 +463,15 @@ div.button, div.checker, div.radio, div.selector, div.uploader {
   color: white;
 }
 
+.mycard:active {
+  background-color: #69BBDD;
+  margin-right: 10px;
+  box-shadow: 0px 4px 10px #00000029;
+  color: white;
+}
+
 .todo-nav .nav-link{
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(255, 255, 255);
   margin-right: 10px;
   border-radius: 10px;
 }
@@ -425,4 +482,12 @@ div.button, div.checker, div.radio, div.selector, div.uploader {
   box-shadow: 0px 4px 10px #00000029;
   color: white;
 }
+
+.todo-nav .my-active{
+  background-color: #69BBDD;
+  box-shadow: 0px 4px 10px #00000029;
+  color: white;
+}
+
+/* Card di password e personale */
 

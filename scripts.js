@@ -77,6 +77,28 @@ function myFunction() {
   }
 
 
+  // FUnzione ricerca in tabella
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInputTask");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTableTask");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+      // da 0 (ID) a 5(Totale)
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+
 
 //   Seconda tabella
 // $(document).ready(function () {
@@ -98,6 +120,13 @@ document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() =
         .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
         .forEach(tr => table.appendChild(tr) );
 })));
+
+// Rende le cards cliccabili
+jQuery(document).ready(function($) {
+  $(".clickable-row").click(function() {
+      window.location = $(this).data("href");
+  });
+});
 
 
 

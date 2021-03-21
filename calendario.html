@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
 
@@ -8,16 +8,22 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Simple Sidebar - Start Bootstrap Template</title>
+  <!-- Titolo della pagina -->
+  <title>Dashboard by samurai-pepps</title>
+  <!-- Descrizione della pagina -->
+  <meta name="description" content="Dashboard per la gestione aziendale delle vendite">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/svg" href="Images/dashboard-favicon.png" />
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="css/simple-sidebar.css" rel="stylesheet">
-
   <!-- W3School CSS -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
 
   <!-- Material Icons -->
   <link
@@ -34,7 +40,7 @@
 
 <body>
 
-  <div class="d-flex" id="wrapper">
+  <div class="d-flex mysidebar" id="wrapper">
 
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
@@ -42,7 +48,7 @@
         <img src="Images/Logo Azienda@2x.png" alt="Logo Azienda">
       </div>
 
-      <!-- Titolo del menu -->
+      <!-- Titolo Parte di Menu -->
       <div class="dashboard-menu">
         <div class="menu-title">
           <h5>Dashboard</h5>
@@ -50,20 +56,21 @@
         </div>
       </div>
 
-      <!-- Items del menu -->
+      <!-- Items del menu  -->
       <div class="list-group list-group-flush">
         <div class="menu-items">
           <a class="nav-link" href="index.html"> <span class="material-icons">home</span> Home</a>
-          <a class="nav-link" href="acquisti.html"><span class="material-icons">sell</span>Acquisti</a>
+          <a class="nav-link" href="acquisti.html"><span class="material-icons">sell</span>Vendite</a>
           <a class="nav-link" href="spedizioni.html"><span class="material-icons">local_shipping</span>Spedizioni</a>
           <a class="nav-link" href="prodotti.html"><span class="material-icons">category</span>Prodotti</a>
           <a class="nav-link" href="clienti.html"><span class="material-icons">group</span>Clienti</a>
           <a class="nav-link" href="visita.html"><span class="material-icons">transfer_within_a_station</span>Visita</a>
           <a class="nav-link" href="veicoli.html"><span class="material-icons">garage</span>Veicoli</a>
+          <a class="nav-link" href="personale.html"><span class="material-icons">badge</span>Personale</a>
         </div>
       </div>
 
-      <!-- Titolo del menu -->
+      <!-- Titolo Parte di Menu -->
       <div class="dashboard-menu">
         <div class="menu-title">
           <h5>Dashboard</h5>
@@ -71,26 +78,33 @@
         </div>
       </div>
 
-       <!-- Items del menu -->
+      <!-- Items del menu  -->
+      <div class="list-group list-group-flush">
       <div class="menu-items">
-        <a class="nav-link active" href="calendario.html"><span class="material-icons">calendar_today</span>Calendario</a>
+        <a class="nav-link active" href="calendario.html"><span
+            class="material-icons">calendar_today</span>Calendario</a>
         <a class="nav-link" href="task.html"><span class="material-icons">task_alt</span>Task</a>
         <a class="nav-link" href="password.html"><span class="material-icons">vpn_key</span>Password</a>
-        <a class="nav-link" href="impostazioni.html"><span class="material-icons">settings</span>Impostazioni</a>
       </div>
+    </div>
+      
 
 
     </div>
+
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
 
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+      
 
-        <!-- Burger menu toggle per chiudere e aprire la sidebar -->
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-none border-bottom">
+        <img src="Images/menu_open-black-18dp.svg" id="menu-toggle" alt="Sidebar Menu Toggle">
+
+
+        <!-- Burger menu toggle che permette di aprire e chiudere la sidebar -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -98,18 +112,25 @@
 
         <!-- Items della navbar -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+
+            <!-- Immagine del profilo Utente -->
+            <li class="nav-item active">
+              <img src="Images/user-logo.png" alt="User Profile Image" class="profile-image">
+            </li>
+
             <!-- <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
             </li> -->
+
+            <!-- Dropdown -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Hey, Giuseppe
-              </a>
+                aria-haspopup="true" aria-expanded="false"> Hey, Giuseppe </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Action</a>
                 <a class="dropdown-item" href="#">Another action</a>
@@ -117,36 +138,458 @@
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
             </li>
+
           </ul>
         </div>
       </nav>
 
       <!-- Corpo della dashboard -->
       <div class="container-fluid">
-        <h1 class="mt-4">Simple Sidebar</h1>
-        <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on
-          larger screens. When toggled using the button below, the menu will change.</p>
-        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional,
-          and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the
-          menu when clicked.</p>
+        <div class="container pt-4">
+
+          <div class="row d-flex align-items-center">
+            <div class="col-10">
+              <h1 style="font-weight: 700; color: #5C697B;">Calendario Eventi</h1>
+              <!-- <p style="color: #5C697B;">Aggiungi, modifica o elimina eventi con semplicità</p> -->
+            </div>
+            <div class="col-2" style="display: flex;">
+              <!-- Button trigger modal -->
+              <span class="material-icons ml-auto mypointer" style="font-size: 50px; color: #919BA8;" data-toggle="modal" data-target="#nuovo-evento">add_box</span>
+              <!-- <button type="button" class="btn btn-primary my-auto" data-toggle="modal" data-target="#nuovo-evento">
+                Nuovo Task
+              </button> -->
+
+              <!-- Modal Nuovo Evento-->
+              <div class="modal fade" id="nuovo-evento" tabindex="-1" aria-labelledby="nuovo-eventoLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" style="font-size: 25px; font-weight: 700;" id="nuovo-eventoLabel">Nuovo Evento</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group row">
+                          <label for="example-text-input" class="col-2 col-form-label">Testo</label>
+                          <div class="col-10">
+                            <input class="form-control" type="text" value="" id="inputDescrizione">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="example-date-input" class="col-2 col-form-label">Data</label>
+                          <div class="col-10">
+                            <input class="form-control" type="date" value="" id="inputData">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="example-time-input" class="col-2 col-form-label">Ora</label>
+                          <div class="col-10">
+                            <input class="form-control" type="time" value="" id="inputTime">
+                          </div>
+                        </div>
+                        <!-- <button type="submit" class="btn btn-primary">Sign in</button> -->
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+                      <button type="button" class="btn btn-primary">Aggiungi</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal Elimina -->
+            <div class="modal fade" id="elimina-evento" tabindex="-1" aria-labelledby="elimina-eventoLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!-- Titolo -->
+                  <h5 class="modal-title" style="font-size: 25px; font-weight: 700;" id="elimina-eventoLabel">Sei sicuro di volerlo eliminare?</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <!-- Footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+                  <button type="button" class="btn btn-primary">Elimina</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+         
+
+          <!-- Summary Cards Large -->
+          <div class="card-deck card-deck-task d-none d-xl-flex pt-4">
+            <!-- Card Acquisti -->
+            <div class="mycard-task active" href="#" style="max-width: 250px; max-height: 89px;">
+              <div class="row my-align">
+                <div class="col-7">
+                  <div class="mycard-body">
+                    <h5 class="card-title">300</h5>
+                    <p class="card-text">Oggi</p>
+                  </div>
+                </div>
+
+                <div class="col-5">
+                  <div class="mycard-icon"> <img src="Images/today-white-18dp.svg" style="height: 60px;"
+                      alt="Local Shipping"></div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Card Spedizioni -->
+            <div class="mycard-task mypointer clickable-row" data-href="index.html" style="max-width: 250px; max-height: 89px;">
+              <div class="row my-align">
+                <div class="col-7">
+                  <div class="mycard-body">
+                    <h5 class="card-title">300</h5>
+                    <p class="card-text">Tutti</p>
+                  </div>
+                </div>
+
+                <div class="col-5">
+                  <div class="mycard-icon"> <img src="Images/inbox-white-18dp.svg" style="height: 60px;"
+                      alt="Local Shipping"></div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Card Visite -->
+            <div class="mycard-task mypointer clickable-row" data-href="index.html" style="max-width: 250px; max-height: 89px;">
+              <div class="row my-align">
+                <div class="col-7">
+                  <div class="mycard-body">
+                    <h5 class="card-title">300</h5>
+                    <p class="card-text">Assegnati</p>
+                  </div>
+                </div>
+
+                <div class="col-5">
+                  <div class="mycard-icon"> <img src="Images/assignment_ind-white-18dp.svg" style="height: 60px;"
+                      alt="Local Shipping"></div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Summary Cards Medium -->
+          <div class="card-deck card-deck-task d-none d-md-flex d-xl-none pt-4">
+            <!-- Card Acquisti -->
+            <div class="mycard-task mypointer clickable-row" data-href="index.html" style="width: 160px; max-height: 89px;">
+              <div class="row my-align">
+                <div class="col-6">
+                  <div class="mycard-body">
+                    <h5 class="card-title">300</h5>
+                    <p class="card-text">Oggi</p>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="mycard-icon"> <img src="Images/today-white-18dp.svg" style="height: 60px;"
+                      alt="Local Shipping"></div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Card Spedizioni -->
+            <a href="index.html">
+              <div class="mycard-task mypointer clickable-row" data-href="index.html" style="width: 160px; max-height: 89px;">
+                <div class="row my-align">
+                  <div class="col-6">
+                    <div class="mycard-body">
+                      <h5 class="card-title">300</h5>
+                      <p class="card-text">Tutti</p>
+                    </div>
+                  </div>
+  
+                  <div class="col-6">
+                    <div class="mycard-icon"> <img src="Images/inbox-white-18dp.svg" style="height: 60px;"
+                        alt="Local Shipping"></div>
+                  </div>
+  
+                </div>
+              </div>
+            </a>
+
+            <!-- Card Visite -->
+            <div class="mycard-task mypointer clickable-row" data-href="index.html" style="width: 160px; max-height: 89px;">
+              <div class="row my-align">
+                <div class="col-6">
+                  <div class="mycard-body">
+                    <h5 class="card-title">300</h5>
+                    <p class="card-text">Assegnati</p>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="mycard-icon"> <img src="Images/assignment_ind-white-18dp.svg" style="height: 60px;"
+                      alt="Local Shipping"></div>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+
+          <!-- Summary Cards Small -->
+          <div class="card-deck card-deck-task d-none d-sm-flex d-md-none pt-4">
+            <!-- Card Acquisti -->
+            <div class="mycard-task mypointer clickable-row" data-href="index.html" style="width: 200px; max-height: 89px;">
+              <div class="row my-align">
+                <div class="col-6">
+                  <div class="mycard-body">
+                    <h5 class="card-title">300</h5>
+                    <p class="card-text">Oggi</p>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="mycard-icon"> <img src="Images/today-white-18dp.svg" style="height: 60px;"
+                      alt="Local Shipping"></div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Card Spedizioni -->
+            <div class="mycard-task mypointer clickable-row" data-href="index.html" style="width: 200px; max-height: 89px;">
+              <div class="row my-align">
+                <div class="col-6">
+                  <div class="mycard-body">
+                    <h5 class="card-title">300</h5>
+                    <p class="card-text">Tutti</p>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="mycard-icon"> <img src="Images/inbox-white-18dp.svg" style="height: 60px;"
+                      alt="Local Shipping"></div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Card Visite -->
+            <div class="mycard-task mypointer clickable-row" data-href="index.html" style="width: 200px; max-height: 89px;">
+              <div class="row my-align">
+                <div class="col-6">
+                  <div class="mycard-body">
+                    <h5 class="card-title">300</h5>
+                    <p class="card-text">Assegnati</p>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="mycard-icon"> <img src="Images/assignment_ind-white-18dp.svg" style="height: 60px;"
+                      alt="Local Shipping"></div>
+                </div>
+
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <!-- Summary Cards Mobile -->
+          <div class="card-deck card-deck-task d-sm-none d-md-none pt-4">
+            <!-- Card Acquisti -->
+            <div class="mycard-task mypointer clickable-row" data-href="index.html" style="width: 300px; max-height: 89px;">
+              <div class="row my-align">
+                <div class="col-7">
+                  <div class="mycard-body">
+                    <h5 class="card-title">300</h5>
+                    <p class="card-text">Oggi</p>
+                  </div>
+                </div>
+
+                <div class="col-5">
+                  <div class="mycard-icon"> <img src="Images/today-white-18dp.svg" style="height: 60px;"
+                      alt="Local Shipping"></div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Card Spedizioni -->
+            <div class="mycard-task mypointer clickable-row" data-href="index.html" style="width: 300px; max-height: 89px;">
+              <div class="row my-align">
+                <div class="col-7">
+                  <div class="mycard-body">
+                    <h5 class="card-title">300</h5>
+                    <p class="card-text">Tutti</p>
+                  </div>
+                </div>
+
+                <div class="col-5">
+                  <div class="mycard-icon"> <img src="Images/inbox-white-18dp.svg" style="height: 60px;"
+                      alt="Local Shipping"></div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Card Visite -->
+            <div class="mycard-task mypointer clickable-row" data-href="index.html" style="width: 300px; max-height: 89px;">
+              <div class="row my-align">
+                <div class="col-7">
+                  <div class="mycard-body">
+                    <h5 class="card-title">300</h5>
+                    <p class="card-text">Assegnati</p>
+                  </div>
+                </div>
+
+                <div class="col-5">
+                  <div class="mycard-icon"> <img src="Images/assignment_ind-white-18dp.svg" style="height: 60px;"
+                      alt="Local Shipping"></div>
+                </div>
+
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+          <!-- Titolo Pagina -->
+          <div class="row">
+            <div class="col">
+              <h2 style="font-weight: 700; color: #5C697B;">Oggi</h2>
+            </div>
+          </div>
+
+          <!-- Ricerca -->
+          <div class="row mypadding-top">
+  
+              <div class="col ml-auto">
+                <form class="myform my-2 my-lg-0 d-flex align-items-center">
+                  <span class="material-icons">search</span>
+                  <input id="myInputTask" onkeyup="myFunction()" class="form-control mr-sm-2" type="search"
+                    placeholder="Search" aria-label="Search">
+                </form>
+              </div>
+            </div>
+          
+
+          <table id="myTableTask" class="table table-borderless mypadding-top">
+            <thead class="d-none myrow">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="myrow">
+                <!-- <th scope="row">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                      value="option2" unchecked>
+                    <p style="font-weight: 100;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis,
+                      fugit voluptate. Doloremque culpa laborum veritatis!</p>
+                  </div>
+                </th> -->
+                <td>
+                  <p style="font-weight: 100;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, fugit
+                    voluptate. Doloremque culpa laborum veritatis!</p>
+                  <div class="row">
+                    <!-- <div class="col-1">Urgente</div> -->
+                    <div class="col-7 col-md-3">Data: 12/10/2021</div>
+                    <div class="col-4 col-md-2">Ora: 10:00</div>
+                  </div>
+                </td>
+                <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal" data-target="#nuovo-evento">create</span></td>
+                <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal" data-target="#elimina-evento">delete</span></td>
+              </tr>
+              <tr class="myrow">
+                <!-- <th scope="row">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                      value="option2" unchecked>
+                    <p style="font-weight: 100;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis,
+                      fugit voluptate. Doloremque culpa laborum veritatis!</p>
+                  </div>
+                </th> -->
+                <td>
+                  <p style="font-weight: 100;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, fugit
+                    voluptate. Doloremque culpa laborum veritatis!</p>
+                  <div class="row">
+                    <!-- <div class="col-1">Urgente</div> -->
+                    <div class="col-7 col-md-3">Data: 12/10/2021</div>
+                    <div class="col-4 col-md-2">Ora: 10:00</div>
+                  </div>
+                </td>
+                <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal" data-target="#nuovo-evento">create</span></td>
+                <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal" data-target="#elimina-evento">delete</span></td>
+              </tr>
+              <tr class="myrow">
+                <!-- <th scope="row">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                      value="option2" unchecked>
+                    <p style="font-weight: 100;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis,
+                      fugit voluptate. Doloremque culpa laborum veritatis!</p>
+                  </div>
+                </th> -->
+                <td>
+                  <p style="font-weight: 100;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, fugit
+                    voluptate. Doloremque culpa laborum veritatis!</p>
+                  <div class="row">
+                    <!-- <div class="col-1">Urgente</div> -->
+                    <div class="col-7 col-md-3">Data: 12/10/2021</div>
+                    <div class="col-4 col-md-2">Ora: 10:00</div>
+                  </div>
+                </td>
+                <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal" data-target="#nuovo-evento">create</span></td>
+                <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal" data-target="#elimina-evento">delete</span></td>
+              </tr>
+
+
+            </tbody>
+          </table>
+
+
+          <!-- /#page-content-wrapper -->
+
+
+        </div>
+        <!-- /#wrapper -->
       </div>
-    </div>
-    <!-- /#page-content-wrapper -->
 
-  </div>
-  <!-- /#wrapper -->
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Menu Toggle Script -->
-  <script>
-    $("#menu-toggle").click(function (e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
-    });
-  </script>
+      <!-- w3school chart js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+      <!-- MyScripts -->
+      <script src="scripts.js"></script>
+
+      <!-- Menu Toggle Script -->
+      <script>
+        $("#menu-toggle").click(function (e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+        });
+      </script>
 
 </body>
 

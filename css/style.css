@@ -1,0 +1,30 @@
+/* STYLE DELLA PAGINATION */
+
+.pagination li{
+    padding: 8px;
+    margin: 2px;
+    color: rgb(131, 131, 131);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(198, 198, 198);
+    border-radius: 3px;
+}
+
+.pagination li:hover{
+    padding: 8px;
+    margin: 2px;
+    color: rgb(255, 255, 255);
+    background-color: #69BBDD;
+    border: 1px solid rgba(198, 198, 198, 0);
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.pagination li.active{
+    padding: 8px;
+    margin: 2px;
+    color: rgb(255, 255, 255);
+    background-color: #69BBDD;
+    border: 1px solid rgba(198, 198, 198, 0);
+    border-radius: 3px;
+    font-weight: 600;
+}
