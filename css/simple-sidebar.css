@@ -42,11 +42,16 @@
 @media (min-width: 768px) {
   #sidebar-wrapper {
     margin-left: 0;
+    position: fixed;
+    height:100%;
+    min-height:700px; /*Set the height you want to be able to scroll to here*/
+    overflow: auto; /*Needed due to centering with margins*/
   }
 
   #page-content-wrapper {
     min-width: 0;
     width: 100%;
+    margin-left: 18rem;
   }
 
   #wrapper.toggled #sidebar-wrapper {
