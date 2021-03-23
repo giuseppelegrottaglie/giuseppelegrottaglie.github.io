@@ -141,43 +141,53 @@
             <div class="col-4 ml-auto " style="display: flex;">
               <!-- Button trigger modal -->
               <span class="material-icons pr-0 ml-auto mypointer" style="font-size: 50px; color: #919BA8;"
-                data-toggle="modal" data-target="#nuova-password">add_box</span>
+                data-toggle="modal" data-target="#nuovo-venditore">add_box</span>
 
               <!-- Modal Nuovo Acquisto -->
-              <div class="modal fade" id="nuova-password" data-backdrop="static" data-keyboard="false" tabindex="-1"
-                aria-labelledby="nuova-passwordLabel" aria-hidden="true">
+              <div class="modal fade" id="nuovo-venditore" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="nuovo-venditoreLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" style="font-size: 25px; font-weight: 700;" id="nuova-passwordLabel">Nuova
-                        Password</h5>
+                      <h5 class="modal-title" style="font-size: 25px; font-weight: 700;" id="nuovo-venditoreLabel">Nuovo
+                        Venditore</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
 
-                    <!-- Corpo del modal -->
                     <div class="modal-body">
                       <form>
                         <div class="form-group">
                           <div class="for-row">
-                            <label for="inputProdotto">Servizio</label>
-                            <input type="text" class="form-control" id="inputServizio" required>
+                            <label for="inputNome">Nome</label>
+                            <input type="text" class="form-control" id="inputNome" required>
                           </div>
                         </div>
                         <div class="form-group">
                           <div class="for-row">
-                            <label for="inputProdotto">Email</label>
+                            <label for="inputCognome">Cognome</label>
+                            <input type="text" class="form-control" id="inputCognome" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="for-row">
+                            <label for="inputEmail">Email</label>
                             <input type="email" class="form-control" id="inputEmail" required>
                           </div>
                         </div>
                         <div class="form-group">
                           <div class="for-row">
-                            <label for="inputProdotto">Password</label>
-                            <input type="text" class="form-control" id="inputPassword" required>
+                            <label for="inputNumeroTelefono">Numero di telefono</label>
+                            <input type="text" class="form-control" id="inputNumeroTelefono" required>
                           </div>
                         </div>
-
+                        <div class="form-group">
+                          <div class="for-row">
+                            <label for="inputCodiceUnivoco">Tipologia Pratiche</label>
+                            <input type="text" class="form-control" id="inputPratiche" required>
+                          </div>
+                        </div>
                       </form>
                     </div>
                     <div class="modal-footer">
@@ -189,13 +199,13 @@
               </div>
 
               <!-- Modal Elimina -->
-              <div class="modal fade" id="elimina-password" tabindex="-1" aria-labelledby="elimina-passwordLabel"
+              <div class="modal fade" id="elimina-venditore" tabindex="-1" aria-labelledby="elimina-venditoreLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
                       <!-- Titolo -->
-                      <h5 class="modal-title" style="font-size: 25px; font-weight: 700;" id="elimina-passwordLabel">Sei
+                      <h5 class="modal-title" style="font-size: 25px; font-weight: 700;" id="elimina-venditoreLabel">Sei
                         sicuro di volerlo eliminare?</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -221,19 +231,19 @@
           <div class="row">
             <div class="col">
               <ul class="nav nav-pills todo-nav">
-                <li class="nav-item"><a href="#" class="nav-link my-active">Venditori</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Operai</a></li>
+                <li class="nav-item"><a href="personale.html" class="nav-link my-active">Venditori</a></li>
+                <li class="nav-item"><a href="personale-operai.html" class="nav-link">Operai</a></li>
               </ul>
             </div>
           </div>
 
 
-          <!-- Tabella di prova -->
+          <!-- Tabella -->
           <div style="margin-top:50px">
             <div class="row d-flex">
               <div class="col d-flex">
                 <div class="form-group">
-                  <!--		Show Numbers Of Rows 		-->
+                  <!--		Numero di righe da mostrare		-->
                   <select class="form-control" name="state" id="maxRows">
                     <option value="5000">Mostra tutto</option>
                     <option value="5">5</option>
@@ -259,14 +269,26 @@
 
 
             <!-- Tabella Definitiva -->
-            <table class="table table-borderless table-responsive-sm table-responsive-md table-responsive-md table-class" id="table-id">
+            <table
+              class="table table-borderless table-responsive-sm table-responsive-md table-responsive-md table-class"
+              id="table-id">
 
               <tbody>
                 <!-- Testa della tabella -->
                 <tr class="myrow">
                   <th scope="col" class="myrow-item" style="color: #5C697B;">
                     <div class="d-flex">
-                      Servizio<span class="material-icons pl-2">swap_vert</span>
+                      ID<span class="material-icons pl-2">swap_vert</span>
+                    </div>
+                  </th>
+                  <th scope="col" class="myrow-item" style="color: #5C697B;">
+                    <div class="d-flex">
+                      Nome<span class="material-icons pl-2">swap_vert</span>
+                    </div>
+                  </th>
+                  <th scope="col" class="myrow-item" style="color: #5C697B;">
+                    <div class="d-flex">
+                      Cognome<span class="material-icons pl-2">swap_vert</span>
                     </div>
                   </th>
                   <th scope="col" class="myrow-item" style="color: #5C697B;">
@@ -276,87 +298,44 @@
                   </th>
                   <th scope="col" class="myrow-item" style="color: #5C697B;">
                     <div class="d-flex">
-                      Password<span class="material-icons pl-2">swap_vert</span>
+                      Telefono<span class="material-icons pl-2">swap_vert</span>
                     </div>
                   </th>
                   <th scope="col" class="myrow-item" style="color: #5C697B;">
+                    <div class="d-flex">
+                      Tipologia Pratiche<span class="material-icons pl-2">swap_vert</span>
+                    </div>
                   </th>
+                  <!-- Edit -->
+                  <th scope="col" class="myrow-item" style="color: #5C697B;">
+                  </th>
+                  <!-- Delete -->
                   <th scope="col" class="myrow-item" style="color: #5C697B;">
                   </th>
                 </tr>
 
                 <!-- Righe della tabella -->
                 <!-- class=" d-none d-md-table-cell" per nascondere la cella nella versione mobile -->
-                <tr class="myrow clickable-row mypointer" data-href="#">
-                  <td>Sqrvizio</td>
+                <tr class="myrow clickable-row mypointer" data-href="venditore.html">
+                  <td>9999</td>
+                  <td>Nome</td>
+                  <td>Cognome</td>
                   <td>example@mail.com</td>
                   <td>1-636-140-1210</td>
+                  <td>Transoni</td>
+                  <!-- Edit -->
                   <td><span class="material-icons mypointer" style="color: #69C4AB;" data-toggle="modal"
-                    data-target="#nuova-password">create</span>
-                </td>
-                <td><span class="material-icons mypointer" style="color: #E96E8A;" data-toggle="modal"
-                    data-target="#elimina-password">delete</span>
-                </td>
-                </tr>
-                <tr class="myrow clickable-row mypointer" data-href="#">
-                  <td>Sfrvizio</td>
-                  <td>example@mail.com</td>
-                  <td>1-636-140-1210</td>
-                  <td><span class="material-icons mypointer" style="color: #69C4AB;" data-toggle="modal"
-                    data-target="#nuova-password">create</span>
-                </td>
-                <td><span class="material-icons mypointer" style="color: #E96E8A;" data-toggle="modal"
-                    data-target="#elimina-password">delete</span>
-                </td>
-                </tr>
-                <tr class="myrow clickable-row mypointer" data-href="#">
-                  <td>Sgrvizio</td>
-                  <td>example@mail.com</td>
-                  <td>1-636-140-1210</td>
-                  <td><span class="material-icons mypointer" style="color: #69C4AB;" data-toggle="modal"
-                    data-target="#nuova-password">create</span>
-                </td>
-                <td><span class="material-icons mypointer" style="color: #E96E8A;" data-toggle="modal"
-                    data-target="#elimina-password">delete</span>
-                </td>
-                </tr>
-                <tr class="myrow clickable-row mypointer" data-href="#">
-                  <td>Servizio</td>
-                  <td>example@mail.com</td>
-                  <td>1-636-140-1210</td>
-                  <td><span class="material-icons mypointer" style="color: #69C4AB;" data-toggle="modal"
-                    data-target="#nuova-password">create</span>
-                </td>
-                <td><span class="material-icons mypointer" style="color: #E96E8A;" data-toggle="modal"
-                    data-target="#elimina-password">delete</span>
-                </td>
-                </tr>
-                <tr class="myrow clickable-row mypointer" data-href="#">
-                  <td>Servizio</td>
-                  <td>example@mail.com</td>
-                  <td>1-636-140-1210</td>
-                  <td><span class="material-icons mypointer" style="color: #69C4AB;" data-toggle="modal"
-                    data-target="#nuova-password">create</span>
-                </td>
-                <td><span class="material-icons mypointer" style="color: #E96E8A;" data-toggle="modal"
-                    data-target="#elimina-password">delete</span>
-                </td>
-                </tr>
-                <tr class="myrow clickable-row mypointer" data-href="#">
-                  <td>Servizio</td>
-                  <td>exampleeeeeeeee@mail.com</td>
-                  <td>1-636-140-1210</td>
-                  <td><span class="material-icons mypointer" style="color: #69C4AB;" data-toggle="modal"
-                      data-target="#nuova-password">create</span>
+                      data-target="#nuovo-venditore">create</span>
                   </td>
+                  <!-- Delete -->
                   <td><span class="material-icons mypointer" style="color: #E96E8A;" data-toggle="modal"
-                      data-target="#elimina-password">delete</span>
+                      data-target="#elimina-venditore">delete</span>
                   </td>
                 </tr>
               </tbody>
             </table>
 
-            <!--		Start Pagination -->
+            <!--		Pagination -->
             <div class="pagination-container">
 
               <nav>
@@ -380,22 +359,10 @@
                 </ul>
               </nav>
 
-              <!-- <nav>
-                  <ul class="pagination">
-                    <li data-page="prev">
-                      <span>
-                        < <span class="sr-only">(current)
-                      </span></span>
-                    </li>
-
-                    <li data-page="next" id="prev">
-                      <span> > <span class="sr-only">(current)</span></span>
-                    </li>
-                  </ul>
-                </nav> -->
             </div>
 
-          </div> <!-- 		End of Container -->
+          </div>
+          <!-- 		Fine Tabella -->
 
 
 

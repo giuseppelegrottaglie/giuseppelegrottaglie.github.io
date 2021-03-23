@@ -84,7 +84,7 @@ function myFunction() {
     tr = table.getElementsByTagName("tr");
     for (i = 0; i < tr.length; i++) {
         // da 0 (ID) a 5(Totale)
-      td = tr[i].getElementsByTagName("td")[1];
+      td = tr[i].getElementsByTagName("td")[1]; //Aggiungere una variabile al posto dell'uno e sistamare il ciclo affinchè se non trova nella prima categoria, cerchi nella seconda ecc
       if (td) {
         txtValue = td.textContent || td.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Titolo della pagina -->
+    <title>Personale</title>
+    <!-- Descrizione della pagina -->
+    <meta name="description" content="Dashboard per la gestione aziendale delle vendite">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/svg" href="Images/dashboard-favicon.png" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- W3School CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+
+    <!-- Font di Sistema "Rubik" -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- font-family: 'Rubik', sans-serif; -->
+
+    <!-- Utile per la pagination -->
+    <!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <div class="d-flex mysidebar" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading">
+                <img src="Images/Logo Azienda@2x.png" alt="Logo Azienda">
+            </div>
+
+            <!-- Titolo Parte di Menu -->
+            <div class="dashboard-menu">
+                <div class="menu-title">
+                    <h5>Dashboard</h5>
+                    <div class="dropdown-divider"></div>
+                </div>
+            </div>
+
+            <!-- Items del menu  -->
+            <div class="list-group list-group-flush">
+                <div class="menu-items">
+                    <a class="nav-link" href="index.html"> <span class="material-icons">home</span> Home</a>
+                    <a class="nav-link" href="vendite.html"><span class="material-icons">sell</span>Vendite</a>
+                    <a class="nav-link" href="spedizioni.html"><span
+                            class="material-icons">local_shipping</span>Spedizioni</a>
+                    <a class="nav-link" href="prodotti.html"><span class="material-icons">category</span>Prodotti</a>
+                    <a class="nav-link" href="clienti.html"><span class="material-icons">group</span>Clienti</a>
+                    <a class="nav-link" href="visita.html"><span
+                            class="material-icons">transfer_within_a_station</span>Visita</a>
+                    <a class="nav-link" href="veicoli.html"><span class="material-icons">garage</span>Veicoli</a>
+                    <a class="nav-link" href="personale.html"><span class="material-icons">badge</span>Personale</a>
+                </div>
+            </div>
+
+            <!-- Titolo Parte di Menu -->
+            <div class="dashboard-menu">
+                <div class="menu-title">
+                    <h5>Agenda</h5>
+                    <div class="dropdown-divider"></div>
+                </div>
+            </div>
+
+            <!-- Items del menu  -->
+            <div class="list-group list-group-flush">
+                <div class="menu-items">
+                    <a class="nav-link" href="calendario.html"><span
+                            class="material-icons">calendar_today</span>Calendario</a>
+                    <a class="nav-link" href="task.html"><span class="material-icons">task_alt</span>Task</a>
+                    <a class="nav-link" href="password.html"><span class="material-icons">vpn_key</span>Password</a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-none border-bottom">
+                <img class="d-lg-none" src="Images/menu_open-black-18dp.svg" id="menu-toggle" alt="Sidebar Menu Toggle">
+                <!-- Ruolo dell'Utente -->
+                <h3 class="d-none d-md-block" style="font-weight: 700; color: #5C697B; padding-left:10px;">Admin</h3>
+
+
+                <!-- Burger menu toggle che permette di aprire e chiudere la sidebar -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Items della navbar -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+
+
+
+                        <a style="color: #5C697B;" href="#">Hey, Giuseppe..</a>
+                        <button class="btn btn-primary">Esci</button>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Corpo della dashboard -->
+            <div class="container-fluid">
+                <div class="container pt-4">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-8 pl-4">
+                            <h1 style="font-weight: 700; color: #5C697B;">Nome Venditore</h1>
+                            <!-- <p style="color: #5C697B;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nulla libero adipisci
+                            corrupti commodi sed.</p> -->
+                        </div>
+
+                        <div class="col-4 ml-auto " style="display: flex;">
+                            <!-- Button trigger modal -->
+                            <span class="material-icons pr-0 ml-auto mypointer" style="font-size: 50px; color: #919BA8;"
+                                data-toggle="modal" data-target="#nuovo-venditore">add_box</span>
+                        </div>
+                    </div>
+                    <!-- Modal Nuovo Acquisto -->
+                    <div class="modal fade" id="nuovo-venditore" data-backdrop="static" data-keyboard="false"
+                        tabindex="-1" aria-labelledby="nuovo-venditoreLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" style="font-size: 25px; font-weight: 700;"
+                                        id="nuovo-venditoreLabel">Nuovo
+                                        Venditore</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <div class="for-row">
+                                                <label for="inputNome">Nome</label>
+                                                <input type="text" class="form-control" id="inputNome" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="for-row">
+                                                <label for="inputCognome">Cognome</label>
+                                                <input type="text" class="form-control" id="inputCognome" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="for-row">
+                                                <label for="inputEmail">Email</label>
+                                                <input type="email" class="form-control" id="inputEmail" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="for-row">
+                                                <label for="inputNumeroTelefono">Numero di telefono</label>
+                                                <input type="text" class="form-control" id="inputNumeroTelefono"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="for-row">
+                                                <label for="inputCodiceUnivoco">Tipologia Pratiche</label>
+                                                <input type="text" class="form-control" id="inputPratiche" required>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+                                    <button type="button" class="btn btn-primary">Aggiungi</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Modal Elimina -->
+                    <div class="modal fade" id="elimina-venditore" tabindex="-1"
+                        aria-labelledby="elimina-venditoreLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <!-- Titolo -->
+                                    <h5 class="modal-title" style="font-size: 25px; font-weight: 700;"
+                                        id="elimina-venditoreLabel">Sei
+                                        sicuro di volerlo eliminare?</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <!-- Footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+                                    <button type="button" class="btn btn-primary">Elimina</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- Dati Venditore -->
+                <div class="container mypadding-top">
+
+                    <!-- Tabella -->
+                    <div style="margin-top:50px">
+
+                        <!-- Tabella Definitiva -->
+                        <table
+                            class="table table-borderless table-responsive-sm table-responsive-md table-responsive-md table-class"
+                            id="table-id">
+
+                            <tbody>
+                                <!-- Testa della tabella -->
+                                <tr class="myrow">
+                                    <th scope="col" class="myrow-item" style="color: #5C697B;">
+                                        <div class="d-flex">
+                                            ID<span class="material-icons pl-2">swap_vert</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="myrow-item" style="color: #5C697B;">
+                                        <div class="d-flex">
+                                            Nome<span class="material-icons pl-2">swap_vert</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="myrow-item" style="color: #5C697B;">
+                                        <div class="d-flex">
+                                            Cognome<span class="material-icons pl-2">swap_vert</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="myrow-item" style="color: #5C697B;">
+                                        <div class="d-flex">
+                                            Email<span class="material-icons pl-2">swap_vert</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="myrow-item" style="color: #5C697B;">
+                                        <div class="d-flex">
+                                            Telefono<span class="material-icons pl-2">swap_vert</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="myrow-item" style="color: #5C697B;">
+                                        <div class="d-flex">
+                                            Tipologia Pratiche<span class="material-icons pl-2">swap_vert</span>
+                                        </div>
+                                    </th>
+                                    <!-- Edit -->
+                                    <th scope="col" class="myrow-item" style="color: #5C697B;">
+                                    </th>
+                                    <!-- Delete -->
+                                    <th scope="col" class="myrow-item" style="color: #5C697B;">
+                                    </th>
+                                </tr>
+
+                                <!-- Righe della tabella -->
+                                <!-- class=" d-none d-md-table-cell" per nascondere la cella nella versione mobile -->
+                                <tr class="myrow clickable-row mypointer" data-href="venditore.html">
+                                    <td>9999</td>
+                                    <td>Nome</td>
+                                    <td>Cognome</td>
+                                    <td>example@mail.com</td>
+                                    <td>1-636-140-1210</td>
+                                    <td>Transoni</td>
+                                    <!-- Edit -->
+                                    <td><span class="material-icons mypointer" style="color: #69C4AB;"
+                                            data-toggle="modal" data-target="#nuovo-venditore">create</span>
+                                    </td>
+                                    <!-- Delete -->
+                                    <td><span class="material-icons mypointer" style="color: #E96E8A;"
+                                            data-toggle="modal" data-target="#elimina-venditore">delete</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+                    <!-- 		Fine Tabella -->
+
+                </div>
+
+                <!-- Vendite del venditore -->
+                <div class="container mypadding-top">
+
+                    <div class="row">
+                        <div class="col">
+                            <h2 style="font-weight: 700; color: #5C697B;">Vendite</h2>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Tabella di prova -->
+                    <div style="margin-top:30px">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-4 d-flex">
+                                <div class="form-group">
+                                    <!--		Show Numbers Of Rows 		-->
+                                    <select class="form-control" name="state" id="maxRows">
+                                        <option value="5000">Mostra tutto</option>
+                                        <option value="5">5</option>
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="70">70</option>
+                                        <option value="100">100</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="col-8 d-flex">
+                                <form class="form-group form-inline d-flex align-items-center ml-auto">
+                                    <span class="material-icons d-none d-md-block">search</span>
+                                    <input id="myInputDefTable" onkeyup="myFunction()" class="form-control"
+                                        type="search" placeholder="Search" aria-label="Search">
+                                </form>
+                            </div>
+                        </div>
+
+
+
+                        <table class="table table-borderless table-class" id="table-id">
+
+                            <tr class="myrow">
+                                <th scope="col" class="myrow-item" style="color: #5C697B;">
+                                    <div class="d-flex">
+                                        ID<span class="material-icons pl-2">swap_vert</span>
+                                    </div>
+                                </th>
+                                <th scope="col" class="myrow-item" style="color: #5C697B;">
+                                    <div class="d-flex">
+                                        Cliente<span class="material-icons pl-2">swap_vert</span>
+                                    </div>
+                                </th>
+                                <th scope="col" class="myrow-item" style="color: #5C697B;">
+                                    <div class="d-flex">
+                                        Status<span class="material-icons pl-2">swap_vert</span>
+                                    </div>
+                                </th>
+                                <th scope="col" class="myrow-item" style="color: #5C697B;">
+                                    <div class="d-flex">
+                                        Data<span class="material-icons pl-2">swap_vert</span>
+                                    </div>
+                                </th>
+                                <th scope="col" class="myrow-item" style="color: #5C697B;">
+                                    <div class="d-flex">
+                                        Pagamento<span class="material-icons pl-2">swap_vert</span>
+                                    </div>
+                                </th>
+                                <th scope="col" class="myrow-item" style="color: #5C697B;">
+                                    <div class="d-flex">
+                                        Importo<span class="material-icons pl-2">swap_vert</span>
+                                    </div>
+                                </th>
+                                <th scope="col" class="myrow-item" style="color: #5C697B;">
+                                    <div class="d-flex">
+                                        Note<span class="material-icons pl-2">swap_vert</span>
+                                    </div>
+                                </th>
+                                <th scope="col" class="myrow-item" style="color: #5C697B;">
+
+                                </th>
+                                <th scope="col" class="myrow-item" style="color: #5C697B;">
+
+                                </th>
+
+                            </tr>
+
+                            <tr class="myrow clickable-row mypointer" data-href="#">
+                                <td>9999</td>
+                                <td>Rajah Armstrong</td>
+                                <td>Consegnato</td>
+                                <td>22-10-2021</td>
+                                <td>Contanti</td>
+                                <td>$999</td>
+                                <td>Ha detto che la prossima volta compra da amazon</td>
+                                <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;"
+                                        data-toggle="modal" data-target="#nuova-vendita">create</span>
+                                </td>
+                                <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;"
+                                        data-toggle="modal" data-target="#elimina-acquisto">delete</span>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!--		Start Pagination -->
+                        <div class="pagination-container">
+
+                            <nav>
+                                <ul class="pagination justify-content-end mypointer">
+                                    <li class="page-item mypointer" data-page="prev">
+                                        <span>
+                                            < <span class="sr-only">(current)
+                                        </span>
+                                        </span>
+                                    </li>
+
+                                    <li class="page-item mypointer" data-page="next" id="prev">
+                                        <span>
+                                            > <span class="sr-only">(current)</span>
+                                        </span>
+
+
+                                    </li>
+                                </ul>
+                            </nav>
+
+
+                        </div>
+
+                    </div> <!-- 		Fine tabella -->
+
+
+
+                </div>
+
+
+                <!-- /#page-content-wrapper -->
+
+            </div>
+            <!-- /#wrapper -->
+        </div>
+
+
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- w3school chart js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+        <!-- MyScripts -->
+        <script src="scripts.js"></script>
+
+        <!-- Menu Toggle Script -->
+        <script>
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+        </script>
+
+
+        <!-- Script per la pagination -->
+        <!-- <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+      <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+        <script type="text/javascript" src="js/js.js"></script>
+        <script type="text/javascript">
+            getPagination('#table-id');
+					//getPagination('.table-class');
+					//getPagination('table');
+
+
+
+        </script>
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36251023-1']);
+            _gaq.push(['_setDomainName', 'jqueryscript.net']);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+
+</body>
+
+</html>

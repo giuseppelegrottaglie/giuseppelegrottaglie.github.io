@@ -217,7 +217,7 @@
 
           <!-- Summary Cards -->
           <div class="card-deck card-deck-task pt-4">
-            <!-- Card Acquisti -->
+            <!-- Card Oggi -->
             <div class="mycard-task mypointer clickable-row" data-href="index.html">
               <div class="row my-align">
                 <div class="col-7">
@@ -235,7 +235,7 @@
               </div>
             </div>
 
-            <!-- Card Calendario -->
+            <!-- Card Tutti -->
             <div class="mycard-task mypointer clickable-row" data-href="index.html">
               <div class="row my-align">
                 <div class="col-7">
@@ -253,7 +253,7 @@
               </div>
             </div>
 
-            <!-- Card Visite -->
+            <!-- Card Assegnati -->
             <div class="mycard-task mypointer clickable-row" data-href="index.html">
               <div class="row my-align">
                 <div class="col-7">
@@ -298,85 +298,40 @@
 
 
           <table id="myTableTask" class="table table-borderless mypadding-top">
-            <thead class="d-none myrow">
-              <tr>
-                <th scope="col"></th>
-                <th scope="col"></th>
-                <th scope="col"></th>
-              </tr>
-            </thead>
             <tbody>
               <tr class="myrow">
-                <!-- <th scope="row">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                      value="option2" unchecked>
-                    <p style="font-weight: 100;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis,
-                      fugit voluptate. Doloremque culpa laborum veritatis!</p>
+                <th scope="col" class="myrow-item" style="color: #5C697B;">
+                  <div class="d-flex">
+                    Descrizione<span class="material-icons pl-2">swap_vert</span>
                   </div>
-                </th> -->
-                <td>
-                  <p style="font-weight: 100;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, fugit
-                    voluptate. Doloremque culpa laborum veritatis!</p>
-                  <div class="row">
-                    <!-- <div class="col-1">Urgente</div> -->
-                    <div class="col-7 col-md-3">Data: 12/10/2021</div>
-                    <div class="col-4 col-md-2">Ora: 10:00</div>
+                </th>
+                <th scope="col" class="myrow-item" style="color: #5C697B;">
+                  <div class="d-flex">
+                    Data<span class="material-icons pl-2">swap_vert</span>
                   </div>
-                </td>
-                <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                    data-target="#nuovo-evento">create</span></td>
-                <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                    data-target="#elimina-evento">delete</span></td>
-              </tr>
-              <tr class="myrow">
-                <!-- <th scope="row">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                      value="option2" unchecked>
-                    <p style="font-weight: 100;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis,
-                      fugit voluptate. Doloremque culpa laborum veritatis!</p>
+                </th>
+                <th scope="col" class="myrow-item" style="color: #5C697B;">
+                  <div class="d-flex">
+                    Ora<span class="material-icons pl-2">swap_vert</span>
                   </div>
-                </th> -->
-                <td>
-                  <p style="font-weight: 100;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, fugit
-                    voluptate. Doloremque culpa laborum veritatis!</p>
-                  <div class="row">
-                    <!-- <div class="col-1">Urgente</div> -->
-                    <div class="col-7 col-md-3">Data: 12/10/2021</div>
-                    <div class="col-4 col-md-2">Ora: 10:00</div>
-                  </div>
-                </td>
-                <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                    data-target="#nuovo-evento">create</span></td>
-                <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                    data-target="#elimina-evento">delete</span></td>
-              </tr>
-              <tr class="myrow">
-                <!-- <th scope="row">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                      value="option2" unchecked>
-                    <p style="font-weight: 100;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis,
-                      fugit voluptate. Doloremque culpa laborum veritatis!</p>
-                  </div>
-                </th> -->
-                <td>
-                  <p style="font-weight: 100;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, fugit
-                    voluptate. Doloremque culpa laborum veritatis!</p>
-                  <div class="row">
-                    <!-- <div class="col-1">Urgente</div> -->
-                    <div class="col-7 col-md-3">Data: 12/10/2021</div>
-                    <div class="col-4 col-md-2">Ora: 10:00</div>
-                  </div>
-                </td>
-                <td><span class="material-icons py-3 mypointer" style="color: #E96E8A;" data-toggle="modal"
-                    data-target="#nuovo-evento">create</span></td>
-                <td><span class="material-icons py-3 mypointer" style="color: #69C4AB;" data-toggle="modal"
-                    data-target="#elimina-evento">delete</span></td>
+                </th>
+                <th scope="col" class="myrow-item" style="color: #5C697B;">
+                </th>
+                <th scope="col" class="myrow-item" style="color: #5C697B;">
+                </th>
               </tr>
 
-
+              <tr class="myrow">
+                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, fugit
+                  voluptate. Doloremque culpa laborum veritatis!</td>
+                <td>22-10-2021</td>
+                <td>10:00</td>
+                <td><span class="material-icons mypointer" style="color: #E96E8A;" data-toggle="modal"
+                    data-target="#nuovo-evento">create</span></td>
+                <td><span class="material-icons mypointer" style="color: #69C4AB;" data-toggle="modal"
+                    data-target="#elimina-evento">delete</span></td>
+              </tr>
+              
             </tbody>
           </table>
         </div>
