@@ -144,7 +144,7 @@
   font-size: 16px;
 }
 
-.nav-link.active{
+.menu-items .nav-link:hover{
   width: 190px;
   background-color: #69BBDD;
   border-radius: 7px;
