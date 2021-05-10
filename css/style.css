@@ -1,30 +1,81 @@
-/* STYLE DELLA PAGINATION */
+/* For mobile phones: */
 
-.pagination li{
-    padding: 8px;
-    margin: 2px;
-    color: rgb(131, 131, 131);
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(198, 198, 198);
-    border-radius: 3px;
+@media only screen and (max-width: 768px) {
+    .scrolling-wrapper {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+    .scrolling-wrapper .hero-box {
+        width: 304px;
+        height: 171px;
+        background-color: red;
+        border-radius: 16px;
+        vertical-align: auto;
+        display: inline-block;
+        margin-left: 8px;
+    }
+    .card-deck {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .mycard {
+        width: 318px !important;
+        border-radius: 16px;
+        box-shadow: 0px 3px 10px #00000029;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        margin-bottom: 40px;
+    }
+    .card-img-top {
+        height: 238px;
+        width: 318px;
+        border-radius: 16px 16px 0px 0px !important;
+    }
+    .card-title {
+        font-size: 19px;
+    }
+    .card-text {
+        font-size: 12px;
+    }
 }
 
-.pagination li:hover{
-    padding: 8px;
-    margin: 2px;
-    color: rgb(255, 255, 255);
-    background-color: #69BBDD;
-    border: 1px solid rgba(198, 198, 198, 0);
-    border-radius: 3px;
-    font-weight: 600;
-}
 
-.pagination li.active{
-    padding: 8px;
-    margin: 2px;
-    color: rgb(255, 255, 255);
-    background-color: #69BBDD;
-    border: 1px solid rgba(198, 198, 198, 0);
-    border-radius: 3px;
-    font-weight: 600;
+/* For desktop: */
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .hero-box {
+        width: 1029px;
+        height: 579px;
+        background-color: red;
+        border-radius: 25px;
+        vertical-align: auto;
+    }
+    .card-deck {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .mycard {
+        width: 222px !important;
+        border-radius: 16px;
+        box-shadow: 0px 3px 10px #00000029;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        margin-bottom: 40px;
+    }
+    .card-img-top {
+        height: 166px;
+        width: 222px;
+        border-radius: 16px 16px 0px 0px !important;
+    }
+    .card-title {
+        font-size: 19px;
+    }
+    .card-text {
+        font-size: 12px;
+    }
 }
