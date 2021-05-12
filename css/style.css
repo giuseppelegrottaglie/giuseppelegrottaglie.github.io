@@ -1,11 +1,18 @@
+body {
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+}
+
+
 /* For mobile phones: */
 
 @media only screen and (max-width: 768px) {
     .scrolling-wrapper {
-        overflow-x: scroll;
-        overflow-y: hidden;
-        white-space: nowrap;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
         -webkit-overflow-scrolling: touch;
+        margin-top: 40px;
     }
     .scrolling-wrapper .hero-box {
         width: 304px;
@@ -13,8 +20,12 @@
         background-color: red;
         border-radius: 16px;
         vertical-align: auto;
-        display: inline-block;
+        flex: 0 0 auto;
         margin-left: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 20px;
     }
     .card-deck {
         display: flex;
@@ -40,6 +51,10 @@
     .card-text {
         font-size: 12px;
     }
+    /* Permette di modificare il carosello */
+    .carousel {
+        display: none;
+    }
 }
 
 
@@ -47,6 +62,9 @@
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
+    .scrolling-wrapper {
+        display: none;
+    }
     .hero-box {
         width: 1029px;
         height: 579px;
@@ -56,16 +74,14 @@
     }
     .card-deck {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: center;
     }
     .mycard {
         width: 222px !important;
         border-radius: 16px;
         box-shadow: 0px 3px 10px #00000029;
         background: #FFFFFF 0% 0% no-repeat padding-box;
-        margin-bottom: 40px;
+        margin: 10px;
     }
     .card-img-top {
         height: 166px;
@@ -78,4 +94,83 @@
     .card-text {
         font-size: 12px;
     }
+    /* Permette di modificare il carosello */
+    .carousel {
+        border-radius: 16px;
+        margin-top: 40px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 10px #00000029;
+    }
+    .carousel img {
+        border-radius: 16px;
+    }
+}
+
+.dettagli {}
+
+.dettagli h5 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.dettagli p {
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-top: 4px;
+}
+
+.data p {
+    font-weight: bold;
+    margin-top: 4px;
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+
+.data h5 {
+    font-weight: 700;
+    margin-top: 4px;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.center-align {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Permette di modificare lo stile dei pulsanti */
+
+.mybutton {
+    width: 329px;
+    height: 48px;
+    background-color: red !important;
+    border-color: red !important;
+    border-radius: 8px !important;
+}
+
+.mybutton:hover {
+    box-shadow: 0px 3px 10px #00000029;
+}
+
+
+/* Sezione che permette di modificare lo stuile delle tabs calendario */
+
+.nav-pills {
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+}
+
+.nav-pills>li {
+    float: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav {
+    flex-wrap: none !important;
 }

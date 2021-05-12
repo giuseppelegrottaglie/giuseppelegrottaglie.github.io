@@ -1,0 +1,149 @@
+/*Mobile Nav*/
+
+
+/* Impostazioni per le icone */
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: black;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.material-icons-outlined {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: black;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.material-icons-outlined:hover {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: red;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.b-button {
+    font-size: 1rem;
+    display: flex !important;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    align-items: center;
+}
+
+.b-button p {
+    text-align: center;
+    color: black;
+    margin-bottom: 0;
+    margin-left: 16px;
+}
+
+.btn-secondary a:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+
+.btn-secondary a:active {
+    background-color: rgba(148, 126, 126, 0);
+    border: 0;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+
+.btn-secondary:active {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+
+.footer {
+    border-top: 1px solid transparent;
+}
+
+.d-button {
+    background-color: rgba(255, 0, 0, 0);
+    color: black;
+    border: none;
+}
+
+.tablet-bottombar,
+.mobile-bottombar {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px -3px 3px #00000012;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    padding-top: 20px;
+}
+
+.navbar-toggler-icon {
+    color: black;
+}
+
+.navbar-toggler {
+    border: 0;
+}
+
+.btn-active {
+    background-color: rgb(222, 222, 222) !important;
+    border-radius: 16px;
+}
